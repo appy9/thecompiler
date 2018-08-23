@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "monorepo for thecompiler",
   "scripts": {
+    "alias": "now alias",
     "dev": "backpack",
     "build": "next build && backpack build",
     "serve": "node build/main",
