@@ -1,7 +1,7 @@
 {
-  "name": "codingposts",
+  "name": "thecompiler",
   "version": "1.0.0",
-  "description": "monorepo for codingposts",
+  "description": "monorepo for thecompiler",
   "scripts": {
     "dev": "backpack",
     "build": "next build && backpack build",

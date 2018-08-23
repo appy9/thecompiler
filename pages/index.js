@@ -80,7 +80,7 @@ export default class Index extends Component {
         <Head>
           <title>
             {pageType ? `${pageType} | ` : ''}
-            codingposts
+            thecompiler
           </title>
         </Head>
         <Header handleLogout={this.logOut} user={user} />
