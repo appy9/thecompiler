@@ -5,7 +5,7 @@ import * as SC from './styles';
 
 const Header = ({handleLogout, user}) => (
   <SC.Header>
-    <p>header</p>
+    <p>the compiler</p>
   </SC.Header>
 );
 

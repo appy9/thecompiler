@@ -1,6 +1,6 @@
 {
   "name": "thecompiler",
-  "alias": "thecompiler.site",
+  "alias": ["thecompiler.site", "thecompiler.now.sh"],
   "env": {
     "NODE_ENV": "production"
   },
