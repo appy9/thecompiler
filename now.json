@@ -1,0 +1,8 @@
+{
+  "name": "thecompiler",
+  "alias": "thecompiler.site",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "docker"
+}

@@ -1,0 +1,11 @@
+*
+!components
+!graphql
+!pages
+!static
+!utils
+!backpack.config.js
+!next.config.js
+!server.js
+!package.json
+!package-lock.json
