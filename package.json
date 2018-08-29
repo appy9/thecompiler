@@ -4,14 +4,13 @@
   "description": "monorepo for thecompiler",
   "scripts": {
     "alias": "now alias",
+    "build": "npm run data && next build && backpack build",
+    "data": "node data",
     "dev": "backpack",
-    "build": "npm run build:meta && next build && backpack build",
-    "build:format": "node build-format.js",
-    "build:meta": "node build-meta.js",
+    "precommit": "npm run data && prettier \"**/*.js\" --write && git add .",
     "serve": "node build/main",
     "start": "npm run build && npm run serve",
-    "test": "NODE_ENV=test jest",
-    "precommit": "npm run build:format && prettier \"**/*.js\" --write && git add ."
+    "test": "NODE_ENV=test jest"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -33,7 +32,7 @@
     "styled-components": "^3.4.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-rc.2",
+    "@babel/core": "^7.0.0",
     "babel-eslint": "^8.2.6",
     "babel-plugin-styled-components": "^1.5.1",
     "backpack-core": "^0.7.0",
@@ -41,13 +40,14 @@
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^21.21.0",
+    "eslint-plugin-jest": "^21.22.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
     "husky": "^0.14.3",
     "jest": "^23.5.0",
     "jest-styled-components": "^6.1.1",
+    "npmlog": "^4.1.2",
     "prettier": "^1.14.2",
     "react-test-renderer": "^16.4.2",
     "react-testing-library": "^5.0.0"
