@@ -1,1 +1,14 @@
-[{"id":"eugene-gluhotorenko","name":"Eugene Gluhotorenko","url":"https://medium.com/@e.gluhotorenko"},{"id":"honest.engineering","name":"Honest Engineering","url":"https://honest.engineering"},{"id":"max-stoiber","name":"Max Stoiber","url":"https://mxstbr.blog"},{"id":"prisma","name":"Prisma","url":"https://www.prisma.io"}]
+[
+  {
+    "id": "eugene-gluhotorenko",
+    "name": "Eugene Gluhotorenko",
+    "url": "https://medium.com/@e.gluhotorenko"
+  },
+  {
+    "id": "honest.engineering",
+    "name": "Honest Engineering",
+    "url": "https://honest.engineering"
+  },
+  {"id": "max-stoiber", "name": "Max Stoiber", "url": "https://mxstbr.blog"},
+  {"id": "prisma", "name": "Prisma", "url": "https://www.prisma.io"}
+]
