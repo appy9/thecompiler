@@ -1,0 +1,8 @@
+{
+  "watch": [
+    "controllers/**/*.js",
+    "graphql/**/*.js",
+    "server/**/*.js",
+    "utils/**/*.js"
+  ]
+}

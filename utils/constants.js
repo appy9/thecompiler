@@ -1,1 +1,3 @@
-export const PAGE_AUTHOR = 'PAGE_AUTHOR';
+const PAGE_AUTHOR = 'PAGE_AUTHOR';
+
+module.exports = {PAGE_AUTHOR};

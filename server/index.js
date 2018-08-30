@@ -1,12 +1,12 @@
-import compression from 'compression';
-import express from 'express';
-import graphqlHTTP from 'express-graphql';
-import helmet from 'helmet';
-import next from 'next';
-import getConfig from 'next/config';
+const compression = require('compression');
+const express = require('express');
+const graphqlHTTP = require('express-graphql');
+const helmet = require('helmet');
+const next = require('next');
+const {default: getConfig} = require('next/config');
 
-import schema from './graphql/schema';
-import {PAGE_AUTHOR} from './utils/constants';
+const schema = require('../graphql/schema');
+const {PAGE_AUTHOR} = require('../utils/constants');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({dev});

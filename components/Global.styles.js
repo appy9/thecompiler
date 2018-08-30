@@ -1,7 +1,7 @@
 import {Box as UnStyledBox, Flex as UnStyledFlex} from 'grid-styled';
 import styled from 'styled-components';
 
-export const Flex = UnStyledFlex.extend`
+export const Flex = styled(UnStyledFlex)`
   max-width: 1200px;
 `;
 
@@ -9,27 +9,27 @@ Flex.defaultProps = {
   mx: 'auto'
 };
 
-export const FullColumn = UnStyledBox.extend``;
+export const FullColumn = styled(UnStyledBox)``;
 
 FullColumn.defaultProps = {
   width: 1
 };
 
-export const HalfColumn = UnStyledBox.extend``;
+export const HalfColumn = styled(UnStyledBox)``;
 
 HalfColumn.defaultProps = {
   mx: 3,
   width: 1 / 2
 };
 
-export const OneThirdColumn = UnStyledBox.extend``;
+export const OneThirdColumn = styled(UnStyledBox)``;
 
 OneThirdColumn.defaultProps = {
   mx: 3,
   width: 1 / 3
 };
 
-export const TwoThirdColumn = UnStyledBox.extend``;
+export const TwoThirdColumn = styled(UnStyledBox)``;
 
 TwoThirdColumn.defaultProps = {
   mx: 3,

@@ -9,5 +9,5 @@ FROM mhart/alpine-node:base-10
 WORKDIR /usr/src
 ENV NODE_ENV="production"
 COPY --from=base /usr/src .
-EXPOSE 3000
-CMD ["node", "./node_modules/.bin/next", "start"]
+EXPOSE 8080
+CMD ["node", "server"]

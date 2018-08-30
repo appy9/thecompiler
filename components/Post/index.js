@@ -3,7 +3,7 @@ import React, {Component, Fragment} from 'react';
 
 import * as SC from './styles';
 
-export default class Article extends Component {
+export default class Post extends Component {
   static propTypes = {};
 
   constructor(props) {
@@ -17,7 +17,7 @@ export default class Article extends Component {
 
     return (
       <SC.Div>
-        <p>article</p>
+        <p>posticle</p>
       </SC.Div>
     );
   }

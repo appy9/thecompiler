@@ -1,12 +1,13 @@
+import _map from 'lodash/map';
 import PropTypes from 'prop-types';
 import React, {Component, Fragment} from 'react';
 
-import Article from '../Article';
+import Post from '../Post';
 import * as GSC from '../Global.styles';
 
 const minimumBottomDistance = 150;
 
-export default class ArticleList extends Component {
+export default class PostList extends Component {
   static propTypes = {
     handlePaginate: PropTypes.func,
     items: PropTypes.array,
@@ -44,7 +45,13 @@ export default class ArticleList extends Component {
   }
 
   render() {
-    const {items = [], loading, loadingError} = this.props;
+    const {
+      handlePaginate,
+      items = [],
+      loading,
+      loadingError,
+      showLoadMore
+    } = this.props;
     const noItems = items.length === 0;
 
     return (
@@ -53,17 +60,17 @@ export default class ArticleList extends Component {
           <h2>No items found</h2>
         ) : (
           <Fragment>
-            {items.map(item => (
-              <Article key={item._id} {...item} />
+            {_map(items, (item, index) => (
+              <Post key={index} {...item} />
             ))}
             {loading ? (
               <p>spinner</p>
-            ) : (
+            ) : showLoadMore ? (
               <Fragment>
                 {loadingError && <p>error</p>}
-                <p>load more button</p>
+                <p onClick={handlePaginate}>load more button</p>
               </Fragment>
-            )}
+            ) : null}
           </Fragment>
         )}
       </GSC.Card>
