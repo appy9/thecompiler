@@ -47,8 +47,6 @@ export default class Index extends Component {
         return {initialError: true};
       });
 
-    console.log('qlResponse', qlResponse);
-
     return {...qlResponse, pageType};
   }
 
