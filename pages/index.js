@@ -1,12 +1,13 @@
 import {request} from 'graphql-request';
+import _get from 'lodash/get';
 import getConfig from 'next/config';
 import Head from 'next/head';
 import React, {Component, Fragment} from 'react';
 
-import ArticleList from '../components/ArticleList';
 import CategoryHeader from '../components/CategoryHeader';
 import * as GSC from '../components/Global.styles';
 import Header from '../components/Header';
+import PostList from '../components/PostList';
 import SideLinks from '../components/SideLinks';
 import UserInterests from '../components/UserInterests';
 
@@ -14,30 +15,31 @@ const {
   publicRuntimeConfig: {apiUrl}
 } = getConfig();
 
-export default class Index extends Component {
-  static async getInitialProps({query, res, token}) {
-    console.log('Index getInitialProps', token);
-
-    let items = new Array(15).fill('').map((item, index) => ({_id: index}));
-    const pageType = query && query.page;
-    const QLQuery = `
-      query indexQuery($token: String!) {
-        user(token: $token) {
-          avatar_url
-          id
-          likes
-          login
-        }
-        posts {
-          posts {
-            stuff
-          }
-        }
-        version
+const QLQuery = `
+  query indexQuery($offset: Int!) {
+    allPosts(limit: 20 offset: $offset) {
+      count
+      posts {
+        authors
+        categories
+        date_added
+        date_published
+        languages
+        title
+        type
+        url
       }
-    `;
-    const variables = {token};
-    const qlRes = await request(apiUrl, QLQuery, variables)
+    }
+    version
+  }
+`;
+
+export default class Index extends Component {
+  static async getInitialProps({query, res}) {
+    const pageType = query && query.page;
+
+    const variables = {offset: 0};
+    const qlResponse = await request(apiUrl, QLQuery, variables)
       .then(data => data)
       .catch(error => {
         console.log('error', error);
@@ -45,35 +47,56 @@ export default class Index extends Component {
         return {initialError: true};
       });
 
-    console.log('qlRes', qlRes);
+    console.log('qlResponse', qlResponse);
 
-    return {...qlRes, items, pageType};
+    return {...qlResponse, pageType};
   }
 
   constructor(props) {
     super(props);
 
+    const {count, posts} = props.allPosts;
+
     this.state = {
+      count,
       loading: false,
-      loadingError: false
+      loadingError: false,
+      offset: posts.length,
+      posts
     };
 
     this.handlePaginate = this.handlePaginate.bind(this);
   }
 
-  handlePaginate() {
-    if (!this.state.loading) {
+  async handlePaginate() {
+    if (!this.state.loading && this.state.offset < this.state.count) {
       this.setState({loading: true, loadingError: false});
 
-      setTimeout(() => {
-        this.setState({loading: false});
-      }, 2000);
+      const variables = {offset: this.state.offset};
+      const qlResponse = await request(apiUrl, QLQuery, variables)
+        .then(data => data)
+        .catch(error => {
+          console.log('error', error);
+
+          return {error: true};
+        });
+      const posts = _get(qlResponse, 'allPosts.posts', []);
+
+      if (qlResponse.error) {
+        this.setState({loading: false, loadingError: true});
+      } else {
+        this.setState(state => ({
+          loading: false,
+          offset: state.offset + posts.length,
+          posts: [...state.posts, posts]
+        }));
+      }
     }
   }
 
   render() {
-    const {items, pageType, user} = this.props;
-    const {loading, loadingError} = this.state;
+    const {pageType, user} = this.props;
+    const {count, loading, loadingError, offset, posts} = this.state;
 
     return (
       <Fragment>
@@ -87,11 +110,12 @@ export default class Index extends Component {
         <GSC.Flex>
           <Fragment>
             <GSC.TwoThirdColumn>
-              <ArticleList
+              <PostList
                 handlePaginate={this.handlePaginate}
-                items={items}
+                items={posts}
                 loading={loading}
                 loadingError={loadingError}
+                showLoadMore={offset < count}
               />
             </GSC.TwoThirdColumn>
             <GSC.OneThirdColumn>
