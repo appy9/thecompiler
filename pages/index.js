@@ -10,35 +10,21 @@ import Header from '../components/Header';
 import PostList from '../components/PostList';
 import SideLinks from '../components/SideLinks';
 import UserInterests from '../components/UserInterests';
+import {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} from '../utils/constants';
 
 const {
   publicRuntimeConfig: {apiUrl}
 } = getConfig();
 
-const QLQuery = `
-  query indexQuery($offset: Int!) {
-    allPosts(limit: 20 offset: $offset) {
-      count
-      posts {
-        authors
-        categories
-        date_added
-        date_published
-        languages
-        title
-        type
-        url
-      }
-    }
-    version
-  }
-`;
+const listSize = 4;
 
 export default class Index extends Component {
-  static async getInitialProps({query, res}) {
-    const pageType = query && query.page;
-
-    const variables = {offset: 0};
+  static async getInitialProps(ctx) {
+    const pageId =
+      ctx.req && ctx.req.params && ctx.req.params.id ? ctx.req.params.id : '';
+    const pageType = ctx.query && ctx.query.page;
+    const QLQuery = this.getQuery({pageId, pageType});
+    const variables = {offset: 0, pageId};
     const qlResponse = await request(apiUrl, QLQuery, variables)
       .then(data => data)
       .catch(error => {
@@ -47,13 +33,79 @@ export default class Index extends Component {
         return {initialError: true};
       });
 
-    return {...qlResponse, pageType};
+    return {...qlResponse, pageId, pageType};
+  }
+
+  static getQuery({pageId, pageType}) {
+    const hasPageQuery = pageType && pageId;
+    let pageQuery = '';
+
+    if (hasPageQuery) {
+      switch (pageType) {
+        case PAGE_AUTHOR:
+          pageQuery = `
+            author(id: $pageId) {
+              id
+              name
+              url
+            }
+          `;
+          break;
+        case PAGE_LANG:
+          pageQuery = `
+            language(id: $pageId) {
+              id
+              name
+            }
+          `;
+          break;
+        case PAGE_TAG:
+          pageQuery = `
+            tag(id: $pageId) {
+              id
+              name
+              url
+            }
+          `;
+          break;
+        default:
+      }
+    }
+    const otherArgs = hasPageQuery ? ` $pageId: String!` : '';
+
+    return `
+      query indexQuery($offset: Int! ${otherArgs}) {
+        ${pageQuery || ''}
+        posts(limit: ${listSize} offset: $offset) {
+          count
+          posts {
+            authors {
+              id
+              name
+            }
+            tags {
+              id
+              name
+            }
+            date_added
+            date_published
+            languages {
+              id
+              name
+            }
+            title
+            type
+            url
+          }
+        }
+      }
+    `;
   }
 
   constructor(props) {
     super(props);
 
-    const {count, posts} = props.allPosts;
+    const {count, posts = {}} = props.posts || {};
 
     this.state = {
       count,
@@ -70,7 +122,9 @@ export default class Index extends Component {
     if (!this.state.loading && this.state.offset < this.state.count) {
       this.setState({loading: true, loadingError: false});
 
-      const variables = {offset: this.state.offset};
+      const {pageId, pageType} = this.props;
+      const QLQuery = Index.getQuery({pageId, pageType});
+      const variables = {offset: this.state.offset, pageId};
       const qlResponse = await request(apiUrl, QLQuery, variables)
         .then(data => data)
         .catch(error => {
@@ -78,7 +132,7 @@ export default class Index extends Component {
 
           return {error: true};
         });
-      const posts = _get(qlResponse, 'allPosts.posts', []);
+      const posts = _get(qlResponse, 'posts.posts', []);
 
       if (qlResponse.error) {
         this.setState({loading: false, loadingError: true});
@@ -86,42 +140,41 @@ export default class Index extends Component {
         this.setState(state => ({
           loading: false,
           offset: state.offset + posts.length,
-          posts: [...state.posts, posts]
+          posts: [...state.posts, ...posts]
         }));
       }
     }
   }
 
   render() {
-    const {pageType, user} = this.props;
+    const {author, language, pageType, tag, user} = this.props;
     const {count, loading, loadingError, offset, posts} = this.state;
 
     return (
       <Fragment>
         <Head>
-          <title>
-            {pageType ? `${pageType} | ` : ''}
-            thecompiler
-          </title>
+          <title>thecompiler</title>
         </Head>
         <Header handleLogout={this.logOut} user={user} />
         <GSC.Flex>
-          <Fragment>
-            <GSC.TwoThirdColumn>
-              <PostList
-                handlePaginate={this.handlePaginate}
-                items={posts}
-                loading={loading}
-                loadingError={loadingError}
-                showLoadMore={offset < count}
-              />
-            </GSC.TwoThirdColumn>
-            <GSC.OneThirdColumn>
-              <CategoryHeader type={pageType} />
-              <UserInterests />
-              <SideLinks />
-            </GSC.OneThirdColumn>
-          </Fragment>
+          <GSC.TwoThirdColumn>
+            <PostList
+              handlePaginate={this.handlePaginate}
+              items={posts}
+              loading={loading}
+              loadingError={loadingError}
+              showLoadMore={offset < count}
+            />
+          </GSC.TwoThirdColumn>
+          <GSC.OneThirdColumn>
+            <CategoryHeader
+              author={author}
+              language={language}
+              pageType={pageType}
+              tag={tag}
+            />
+            <SideLinks />
+          </GSC.OneThirdColumn>
         </GSC.Flex>
       </Fragment>
     );

@@ -2,14 +2,26 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import * as GSC from '../Global.styles';
+import {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} from '../../utils/constants';
 
 const CategoryHeader = props => {
-  const {type} = props;
+  const {author, language, pageType, tag} = props;
 
-  if (type) {
+  if (pageType) {
+    const {name, url} = {
+      [PAGE_AUTHOR]: author,
+      [PAGE_LANG]: language,
+      [PAGE_TAG]: tag
+    }[pageType];
+
     return (
       <GSC.Card>
-        <h1>{type}</h1>
+        <h2>{name}</h2>
+        {url && (
+          <a href={url} rel="noopener noreferrer" target="_blank">
+            <p>website</p>
+          </a>
+        )}
       </GSC.Card>
     );
   }
@@ -18,7 +30,10 @@ const CategoryHeader = props => {
 };
 
 CategoryHeader.propTypes = {
-  type: PropTypes.string
+  author: PropTypes.string,
+  language: PropTypes.string,
+  pageType: PropTypes.string,
+  tag: PropTypes.string
 };
 
 export default CategoryHeader;

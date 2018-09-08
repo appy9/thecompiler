@@ -2,7 +2,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["honest.engineering"],
-    "categories": ["graphql"],
+    "tags": ["graphql"],
     "date_published": "2018-08-04T00:00:00",
     "languages": ["javascript"],
     "title": "Why use GraphQL, good and bad reasons",
@@ -12,7 +12,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["prisma"],
-    "categories": ["graphql", "prisma"],
+    "tags": ["graphql", "prisma"],
     "date_published": "2017-12-06T00:00:00",
     "languages": ["javascript"],
     "title": "How do GraphQL remote schemas work?",
@@ -22,7 +22,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["prisma"],
-    "categories": ["graphql", "prisma"],
+    "tags": ["graphql", "prisma"],
     "date_published": "2017-12-12T00:00:00",
     "languages": ["javascript"],
     "title": "GraphQL Schema Stitching explained: Schema Delegation",
@@ -32,7 +32,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["prisma"],
-    "categories": ["graphql", "prisma"],
+    "tags": ["graphql", "prisma"],
     "date_published": "2018-01-12T00:00:00",
     "languages": ["javascript"],
     "title": "Reusing & Composing GraphQL APIs with GraphQL Bindings",
@@ -42,7 +42,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["eugene-gluhotorenko"],
-    "categories": ["css-in-js", "styled-components"],
+    "tags": ["css-in-js", "styled-components"],
     "date_published": "2018-08-13T00:00:00",
     "languages": ["javascript"],
     "title": "How styled-components works: A deep dive under the hood",
@@ -52,7 +52,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["max-stoiber"],
-    "categories": ["server-side-rendering"],
+    "tags": ["server-side-rendering"],
     "date_published": "2018-02-07T00:00:00",
     "languages": ["javascript"],
     "title": "Streaming Server-Side Rendering and Caching at Spectrum",
@@ -62,7 +62,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["max-stoiber"],
-    "categories": ["graphql"],
+    "tags": ["graphql"],
     "date_published": "2018-02-21T00:00:00",
     "languages": ["javascript"],
     "title": "Securing Your GraphQL API from Malicious Queries",
@@ -72,7 +72,7 @@
   {
     "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["max-stoiber"],
-    "categories": ["styled-components"],
+    "tags": ["styled-components"],
     "date_published": "2016-11-30T00:00:00",
     "languages": ["javascript"],
     "title": "The magic behind 💅 styled-components",

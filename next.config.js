@@ -1,15 +1,7 @@
-const isDev = process.env.NODE_ENV !== 'production';
-const parsedPort = parseInt(process.env.PORT, 10);
-const serverPort = parsedPort ? parsedPort : 8080;
-const apiHost =
-  process.env.HOST || `http://localhost${serverPort ? `:${serverPort}` : ''}`;
-const apiUrl = `${apiHost}/graphql`;
+const serverPort = parseInt(process.env.PORT, 10) || 3000;
+const apiUrl = process.env.HOST || 'http://localhost:8080';
 
 module.exports = {
   serverRuntimeConfig: {},
-  publicRuntimeConfig: {
-    apiUrl,
-    isDev,
-    serverPort
-  }
+  publicRuntimeConfig: {apiUrl, serverPort}
 };

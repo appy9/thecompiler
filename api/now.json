@@ -1,0 +1,8 @@
+{
+  "name": "thecompiler-api",
+  "alias": ["api.thecompiler.site", "thecompiler-api.now.sh"],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "docker"
+}

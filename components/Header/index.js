@@ -1,10 +1,15 @@
+import Link from 'next/link';
 import React from 'react';
 
 import * as SC from './styles';
 
 const Header = ({handleLogout, user}) => (
   <SC.Header>
-    <p>the compiler</p>
+    <Link href="/">
+      <a>
+        <p>the compiler</p>
+      </a>
+    </Link>
   </SC.Header>
 );
 

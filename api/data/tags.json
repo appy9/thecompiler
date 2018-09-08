@@ -1,5 +1,5 @@
 [
-  {"id": "css-in-js", "name": "CSS in js"},
+  {"id": "css-in-js", "name": "CSS in JS"},
   {"id": "graphql", "name": "GraphQL", "url": "https://graphql.org"},
   {"id": "prisma", "name": "Prisma", "url": "https://www.prisma.io/"},
   {"id": "server-side-rendering", "name": "Server Side Rendering"}
