@@ -1,5 +1,80 @@
 [
   {
+    "authors": ["andrew-clark"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["react-suspense"],
+    "title": "React Suspense",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=z-6JC0_cOns"
+  },
+  {
+    "authors": ["julia-qiu"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "title": "Migrating Slope Ninja to ZEIT for Fun & Profit",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=6sbdlFoTQfw"
+  },
+  {
+    "authors": ["pranay-prakash", "thomas-fischer"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["babel"],
+    "title": "Optimizing Your Code with Babel",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=XvTsxa9i13o"
+  },
+  {
+    "authors": ["prosper-otemuyiwa"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["nextjs"],
+    "title": "Authentication and Authorization in Next.js",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=bo4BbGwZsWo"
+  },
+  {
+    "authors": ["jack-hanford"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["nextjs"],
+    "title": "Rewriting eaze.com with Next.js",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=JjRV-l9jSYE"
+  },
+  {
+    "authors": ["kylie-stewart"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "title": "Using JavaScript to Teach Machines Basic Shit Things",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=QaV7a64mUYE"
+  },
+  {
+    "authors": ["jackie-luo"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["ember", "react"],
+    "title": "From React to Ember: A Modern Comparison",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
+  },
+  {
+    "authors": ["carolyn-stransky"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-04-05T00:00:00",
+    "title": "Humanizing Your Documentation",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=FvPXMUuUCS4"
+  },
+  {
     "authors": ["honest.engineering"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-08-04T00:00:00",
@@ -78,80 +153,5 @@
     "title": "The magic behind 💅 styled-components",
     "type": "article",
     "url": "https://mxstbr.blog/2016/11/styled-components-magic-explained"
-  },
-  {
-    "authors": ["andrew-clark"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["react-suspense"],
-    "title": "React Suspense",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=z-6JC0_cOns"
-  },
-  {
-    "authors": ["julia-qiu"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "title": "Migrating Slope Ninja to ZEIT for Fun & Profit",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=6sbdlFoTQfw"
-  },
-  {
-    "authors": ["pranay-prakash", "thomas-fischer"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["babel"],
-    "title": "Optimizing Your Code with Babel",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=XvTsxa9i13o"
-  },
-  {
-    "authors": ["prosper-otemuyiwa"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["nextjs"],
-    "title": "Authentication and Authorization in Next.js",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=bo4BbGwZsWo"
-  },
-  {
-    "authors": ["jack-hanford"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["nextjs"],
-    "title": "Rewriting eaze.com with Next.js",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=JjRV-l9jSYE"
-  },
-  {
-    "authors": ["kylie-stewart"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "title": "Using JavaScript to Teach Machines Basic Shit Things",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=QaV7a64mUYE"
-  },
-  {
-    "authors": ["jackie-luo"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["ember", "react"],
-    "title": "From React to Ember: A Modern Comparison",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
-  },
-  {
-    "authors": ["carolyn-stransky"],
-    "date_added": "2018-09-10T15:02:25.941Z",
-    "date_published": "2018-04-05T00:00:00",
-    "title": "Humanizing Your Documentation",
-    "type": "video",
-    "url": "https://www.youtube.com/watch?v=FvPXMUuUCS4"
   }
 ]

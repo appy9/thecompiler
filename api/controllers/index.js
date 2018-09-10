@@ -1,4 +1,6 @@
+const _filter = require('lodash/filter');
 const _find = require('lodash/find');
+const _includes = require('lodash/includes');
 const _map = require('lodash/map');
 const _slice = require('lodash/slice');
 const matchSorter = require('match-sorter');
@@ -9,12 +11,40 @@ const languages = require('../data/languages.json');
 const posts = require('../data/posts.json');
 const searchResults = require('../data/search.json');
 
-const postLength = posts.length;
+const filterIncludesArray = (list, key, value) => {
+  return _filter(list, item => {
+    console.log(item[key], value);
 
-const getPosts = ({limit = 10, offset = 0}) => {
-  const desiredPosts = _slice(posts, offset, offset + limit);
+    return _includes(item[key], value);
+  });
+};
 
-  return {count: postLength, posts: desiredPosts};
+const getPosts = ({
+  author = '',
+  language = '',
+  tag = '',
+  limit = 10,
+  offset = 0
+}) => {
+  let desiredPosts = posts;
+
+  if (author) {
+    desiredPosts = filterIncludesArray(desiredPosts, 'authors', author);
+  }
+
+  if (language) {
+    desiredPosts = filterIncludesArray(desiredPosts, 'languages', language);
+  }
+
+  if (tag) {
+    desiredPosts = filterIncludesArray(desiredPosts, 'tags', tag);
+  }
+
+  const count = desiredPosts.length;
+
+  desiredPosts = _slice(desiredPosts, offset, offset + limit);
+
+  return {count, posts: desiredPosts};
 };
 
 const getAuthor = ({id}) => {

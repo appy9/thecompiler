@@ -64,7 +64,7 @@ const now = moment.utc().toISOString();
 let formattedPosts = _.map(posts, post => ({date_added: now, ...post}));
 
 // Order the keys, Order the lists themesleves
-formattedPosts = _.orderBy(orderKeys(formattedPosts), ['date_added']);
+formattedPosts = _.orderBy(orderKeys(formattedPosts), ['date_added'], ['desc']);
 let formattedAuthors = _.orderBy(orderKeys(authors), ['id']);
 let formattedLanguages = _.orderBy(orderKeys(languages), ['id']);
 let formattedTags = _.orderBy(orderKeys(tags), ['id']);

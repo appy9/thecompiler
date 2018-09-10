@@ -37,11 +37,13 @@ export default class Index extends Component {
 
   static getQuery({pageId, pageType}) {
     const hasPageQuery = pageType && pageId;
+    let pageFilter = '';
     let pageQuery = '';
 
     if (hasPageQuery) {
       switch (pageType) {
         case PAGE_AUTHOR:
+          pageFilter = `author: $pageId`;
           pageQuery = `
             author(id: $pageId) {
               id
@@ -51,6 +53,7 @@ export default class Index extends Component {
           `;
           break;
         case PAGE_LANG:
+          pageFilter = `language: $pageId`;
           pageQuery = `
             language(id: $pageId) {
               id
@@ -59,6 +62,7 @@ export default class Index extends Component {
           `;
           break;
         case PAGE_TAG:
+          pageFilter = `tag: $pageId`;
           pageQuery = `
             tag(id: $pageId) {
               id
@@ -70,12 +74,13 @@ export default class Index extends Component {
         default:
       }
     }
-    const otherArgs = hasPageQuery ? ` $pageId: String!` : '';
+    const queryArgs = hasPageQuery ? ` $pageId: String!` : '';
+    const postsArgs = hasPageQuery ? pageFilter : '';
 
     return `
-      query indexQuery($offset: Int! ${otherArgs}) {
+      query indexQuery($offset: Int! ${queryArgs}) {
         ${pageQuery || ''}
-        posts(limit: ${listSize} offset: $offset) {
+        posts(limit: ${listSize} offset: $offset ${postsArgs}) {
           count
           posts {
             authors {
