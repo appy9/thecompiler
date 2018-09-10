@@ -1,12 +1,9 @@
 *
 !components
-!controllers
-!data
-!graphql
 !pages
-!server
 !static
 !utils
 !next.config.js
 !package.json
 !package-lock.json
+!server.js

@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "alias": "now alias",
-    "build": "npm run data && next build",
+    "build": "next build",
     "data": "node api/data",
     "dev": "nodemon server.js",
     "precommit": "npm run data && prettier \"**/*.{js,json}\" --write && git add .",
-    "serve": "node server",
-    "start": "npm run build && npm run serve",
+    "start": "node server",
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
