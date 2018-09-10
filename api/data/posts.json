@@ -6,7 +6,7 @@
     "languages": ["javascript"],
     "tags": ["graphql"],
     "title": "Why use GraphQL, good and bad reasons",
-    "type": "post",
+    "type": "article",
     "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons"
   },
   {
@@ -16,7 +16,7 @@
     "languages": ["javascript"],
     "tags": ["graphql", "prisma"],
     "title": "How do GraphQL remote schemas work?",
-    "type": "post",
+    "type": "article",
     "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7"
   },
   {
@@ -26,7 +26,7 @@
     "languages": ["javascript"],
     "tags": ["graphql", "prisma"],
     "title": "GraphQL Schema Stitching explained: Schema Delegation",
-    "type": "post",
+    "type": "article",
     "url": "https://www.prisma.io/blog/graphql-schema-stitching-explained-schema-delegation-4c6caf468405"
   },
   {
@@ -36,7 +36,7 @@
     "languages": ["javascript"],
     "tags": ["graphql", "prisma"],
     "title": "Reusing & Composing GraphQL APIs with GraphQL Bindings",
-    "type": "post",
+    "type": "article",
     "url": "https://www.prisma.io/blog/reusing-and-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5"
   },
   {
@@ -46,7 +46,7 @@
     "languages": ["javascript"],
     "tags": ["css-in-js", "styled-components"],
     "title": "How styled-components works: A deep dive under the hood",
-    "type": "post",
+    "type": "article",
     "url": "https://medium.com/styled-components/how-styled-components-works-618a69970421"
   },
   {
@@ -56,7 +56,7 @@
     "languages": ["javascript"],
     "tags": ["server-side-rendering"],
     "title": "Streaming Server-Side Rendering and Caching at Spectrum",
-    "type": "post",
+    "type": "article",
     "url": "https://zeit.co/blog/streaming-server-rendering-at-spectrum"
   },
   {
@@ -66,7 +66,7 @@
     "languages": ["javascript"],
     "tags": ["graphql"],
     "title": "Securing Your GraphQL API from Malicious Queries",
-    "type": "post",
+    "type": "article",
     "url": "https://blog.apollographql.com/securing-your-graphql-api-from-malicious-queries-16130a324a6b"
   },
   {
@@ -76,7 +76,82 @@
     "languages": ["javascript"],
     "tags": ["styled-components"],
     "title": "The magic behind 💅 styled-components",
-    "type": "post",
+    "type": "article",
     "url": "https://mxstbr.blog/2016/11/styled-components-magic-explained"
+  },
+  {
+    "authors": ["andrew-clark"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["react-suspense"],
+    "title": "React Suspense",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=z-6JC0_cOns"
+  },
+  {
+    "authors": ["julia-qiu"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "title": "Migrating Slope Ninja to ZEIT for Fun & Profit",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=6sbdlFoTQfw"
+  },
+  {
+    "authors": ["pranay-prakash", "thomas-fischer"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["babel"],
+    "title": "Optimizing Your Code with Babel",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=XvTsxa9i13o"
+  },
+  {
+    "authors": ["prosper-otemuyiwa"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["nextjs"],
+    "title": "Authentication and Authorization in Next.js",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=bo4BbGwZsWo"
+  },
+  {
+    "authors": ["jack-hanford"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["nextjs"],
+    "title": "Rewriting eaze.com with Next.js",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=JjRV-l9jSYE"
+  },
+  {
+    "authors": ["kylie-stewart"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "title": "Using JavaScript to Teach Machines Basic Shit Things",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=QaV7a64mUYE"
+  },
+  {
+    "authors": ["jackie-luo"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-05-28T00:00:00",
+    "languages": ["javascript"],
+    "tags": ["ember", "react"],
+    "title": "From React to Ember: A Modern Comparison",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
+  },
+  {
+    "authors": ["carolyn-stransky"],
+    "date_added": "2018-09-10T15:02:25.941Z",
+    "date_published": "2018-04-05T00:00:00",
+    "title": "Humanizing Your Documentation",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=FvPXMUuUCS4"
   }
 ]

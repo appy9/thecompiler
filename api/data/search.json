@@ -1,5 +1,9 @@
 [
+  {"id": "andrew-clark", "name": "Andrew Clark", "type": "author"},
+  {"id": "babel", "name": "babel", "type": "tag"},
+  {"id": "carolyn-stransky", "name": "Carolyn Stransky", "type": "author"},
   {"id": "css-in-js", "name": "CSS in JS", "type": "tag"},
+  {"id": "ember", "name": "Ember", "type": "tag"},
   {
     "id": "eugene-gluhotorenko",
     "name": "Eugene Gluhotorenko",
@@ -7,12 +11,22 @@
   },
   {"id": "graphql", "name": "GraphQL", "type": "tag"},
   {"id": "honest.engineering", "name": "Honest Engineering", "type": "author"},
+  {"id": "jack-hanford", "name": "Jack Hanford", "type": "author"},
+  {"id": "jackie-luo", "name": "Jackie Luo", "type": "author"},
   {"id": "javascript", "name": "javascript", "type": "language"},
+  {"id": "julia-qiu", "name": "Julia Qiu", "type": "author"},
+  {"id": "kylie-stewart", "name": "Kylie Stewart", "type": "author"},
   {"id": "max-stoiber", "name": "Max Stoiber", "type": "author"},
+  {"id": "nextjs", "name": "Next.js", "type": "tag"},
+  {"id": "pranay-prakash", "name": "Pranay Prakash", "type": "author"},
   {"id": "prisma", "name": "Prisma", "type": "author"},
+  {"id": "prosper-otemuyiwa", "name": "Prosper Otemuyiwa", "type": "author"},
+  {"id": "react", "name": "React", "type": "tag"},
+  {"id": "react-suspense", "name": "React Suspense", "type": "tag"},
   {
     "id": "server-side-rendering",
     "name": "Server Side Rendering",
     "type": "tag"
-  }
+  },
+  {"id": "thomas-fischer", "name": "Thomas Fischer", "type": "author"}
 ]

@@ -63,19 +63,18 @@ const addType = (list, type) => _.map(list, item => ({...item, type}));
 const now = moment.utc().toISOString();
 let formattedPosts = _.map(posts, post => ({date_added: now, ...post}));
 
-// Add types, Order the keys, Order the lists themesleves
-formattedPosts = _.orderBy(orderKeys(addType(formattedPosts, 'post')), [
-  'date_added'
-]);
-
-let formattedAuthors = _.orderBy(orderKeys(addType(authors, 'author')), ['id']);
-let formattedLanguages = _.orderBy(orderKeys(addType(languages, 'language')), [
-  'id'
-]);
-let formattedTags = _.orderBy(orderKeys(addType(tags, 'tag')), ['id']);
+// Order the keys, Order the lists themesleves
+formattedPosts = _.orderBy(orderKeys(formattedPosts), ['date_added']);
+let formattedAuthors = _.orderBy(orderKeys(authors), ['id']);
+let formattedLanguages = _.orderBy(orderKeys(languages), ['id']);
+let formattedTags = _.orderBy(orderKeys(tags), ['id']);
 
 // Generate search data
-const search = _.chain([...authors, ...languages, ...tags])
+const search = _.chain([
+  ...addType(authors, 'author'),
+  ...addType(languages, 'language'),
+  ...addType(tags, 'tag')
+])
   .map(({id, name, type}) => ({id, name, type}))
   .uniqBy('id')
   .orderBy('id')
