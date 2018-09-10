@@ -1,82 +1,82 @@
 [
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["honest.engineering"],
-    "tags": ["graphql"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-08-04T00:00:00",
     "languages": ["javascript"],
+    "tags": ["graphql"],
     "title": "Why use GraphQL, good and bad reasons",
-    "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons",
-    "type": "article"
+    "type": "post",
+    "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["prisma"],
-    "tags": ["graphql", "prisma"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2017-12-06T00:00:00",
     "languages": ["javascript"],
+    "tags": ["graphql", "prisma"],
     "title": "How do GraphQL remote schemas work?",
-    "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7",
-    "type": "article"
+    "type": "post",
+    "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["prisma"],
-    "tags": ["graphql", "prisma"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2017-12-12T00:00:00",
     "languages": ["javascript"],
+    "tags": ["graphql", "prisma"],
     "title": "GraphQL Schema Stitching explained: Schema Delegation",
-    "url": "https://www.prisma.io/blog/graphql-schema-stitching-explained-schema-delegation-4c6caf468405",
-    "type": "article"
+    "type": "post",
+    "url": "https://www.prisma.io/blog/graphql-schema-stitching-explained-schema-delegation-4c6caf468405"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["prisma"],
-    "tags": ["graphql", "prisma"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-01-12T00:00:00",
     "languages": ["javascript"],
+    "tags": ["graphql", "prisma"],
     "title": "Reusing & Composing GraphQL APIs with GraphQL Bindings",
-    "url": "https://www.prisma.io/blog/reusing-and-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5",
-    "type": "article"
+    "type": "post",
+    "url": "https://www.prisma.io/blog/reusing-and-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["eugene-gluhotorenko"],
-    "tags": ["css-in-js", "styled-components"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-08-13T00:00:00",
     "languages": ["javascript"],
+    "tags": ["css-in-js", "styled-components"],
     "title": "How styled-components works: A deep dive under the hood",
-    "url": "https://medium.com/styled-components/how-styled-components-works-618a69970421",
-    "type": "article"
+    "type": "post",
+    "url": "https://medium.com/styled-components/how-styled-components-works-618a69970421"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["max-stoiber"],
-    "tags": ["server-side-rendering"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-02-07T00:00:00",
     "languages": ["javascript"],
+    "tags": ["server-side-rendering"],
     "title": "Streaming Server-Side Rendering and Caching at Spectrum",
-    "url": "https://zeit.co/blog/streaming-server-rendering-at-spectrum",
-    "type": "article"
+    "type": "post",
+    "url": "https://zeit.co/blog/streaming-server-rendering-at-spectrum"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["max-stoiber"],
-    "tags": ["graphql"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-02-21T00:00:00",
     "languages": ["javascript"],
+    "tags": ["graphql"],
     "title": "Securing Your GraphQL API from Malicious Queries",
-    "url": "https://blog.apollographql.com/securing-your-graphql-api-from-malicious-queries-16130a324a6b",
-    "type": "article"
+    "type": "post",
+    "url": "https://blog.apollographql.com/securing-your-graphql-api-from-malicious-queries-16130a324a6b"
   },
   {
-    "date_added": "2018-08-28T22:55:17.795Z",
     "authors": ["max-stoiber"],
-    "tags": ["styled-components"],
+    "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2016-11-30T00:00:00",
     "languages": ["javascript"],
+    "tags": ["styled-components"],
     "title": "The magic behind 💅 styled-components",
-    "url": "https://mxstbr.blog/2016/11/styled-components-magic-explained",
-    "type": "article"
+    "type": "post",
+    "url": "https://mxstbr.blog/2016/11/styled-components-magic-explained"
   }
 ]

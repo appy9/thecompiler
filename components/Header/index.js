@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import * as SC from './styles';
+import Typeahead from './Typeahead';
 
 const Header = ({handleLogout, user}) => (
   <SC.Header>
@@ -10,6 +11,7 @@ const Header = ({handleLogout, user}) => (
         <p>the compiler</p>
       </a>
     </Link>
+    <Typeahead />
   </SC.Header>
 );
 

@@ -14,12 +14,6 @@ module.exports = gql`
     name: String
   }
 
-  type Tag {
-    id: String
-    name: String
-    url: String
-  }
-
   type Post {
     authors: [Author]
     tags: [Tag]
@@ -28,6 +22,18 @@ module.exports = gql`
     languages: [Language]
     title: String
     type: String
+    url: String
+  }
+
+  type SearchResult {
+    id: String
+    name: String
+    type: String
+  }
+
+  type Tag {
+    id: String
+    name: String
     url: String
   }
 
@@ -46,6 +52,7 @@ module.exports = gql`
       language: String
       tag: String
     ): AllPosts
+    search(q: String!): [SearchResult]
     tag(id: String!): Tag
   }
 `;

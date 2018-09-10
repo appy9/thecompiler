@@ -9,7 +9,6 @@ import * as GSC from '../components/Global.styles';
 import Header from '../components/Header';
 import PostList from '../components/PostList';
 import SideLinks from '../components/SideLinks';
-import UserInterests from '../components/UserInterests';
 import {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} from '../utils/constants';
 
 const {

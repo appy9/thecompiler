@@ -1,0 +1,18 @@
+[
+  {"id": "css-in-js", "name": "CSS in JS", "type": "tag"},
+  {
+    "id": "eugene-gluhotorenko",
+    "name": "Eugene Gluhotorenko",
+    "type": "author"
+  },
+  {"id": "graphql", "name": "GraphQL", "type": "tag"},
+  {"id": "honest.engineering", "name": "Honest Engineering", "type": "author"},
+  {"id": "javascript", "name": "javascript", "type": "language"},
+  {"id": "max-stoiber", "name": "Max Stoiber", "type": "author"},
+  {"id": "prisma", "name": "Prisma", "type": "author"},
+  {
+    "id": "server-side-rendering",
+    "name": "Server Side Rendering",
+    "type": "tag"
+  }
+]

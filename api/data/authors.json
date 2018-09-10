@@ -2,13 +2,25 @@
   {
     "id": "eugene-gluhotorenko",
     "name": "Eugene Gluhotorenko",
+    "type": "author",
     "url": "https://medium.com/@e.gluhotorenko"
   },
   {
     "id": "honest.engineering",
     "name": "Honest Engineering",
+    "type": "author",
     "url": "https://honest.engineering"
   },
-  {"id": "max-stoiber", "name": "Max Stoiber", "url": "https://mxstbr.blog"},
-  {"id": "prisma", "name": "Prisma", "url": "https://www.prisma.io"}
+  {
+    "id": "max-stoiber",
+    "name": "Max Stoiber",
+    "type": "author",
+    "url": "https://mxstbr.blog"
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma",
+    "type": "author",
+    "url": "https://www.prisma.io"
+  }
 ]

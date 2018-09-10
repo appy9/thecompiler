@@ -30,10 +30,10 @@ const CategoryHeader = props => {
 };
 
 CategoryHeader.propTypes = {
-  author: PropTypes.string,
-  language: PropTypes.string,
+  author: PropTypes.object,
+  language: PropTypes.object,
   pageType: PropTypes.string,
-  tag: PropTypes.string
+  tag: PropTypes.object
 };
 
 export default CategoryHeader;
