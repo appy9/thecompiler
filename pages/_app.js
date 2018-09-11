@@ -1,9 +1,38 @@
-import {post} from 'axios';
-import {request} from 'graphql-request';
 import App, {Container} from 'next/app';
-import getConfig from 'next/config';
 import Error from 'next/error';
 import React from 'react';
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
+
+import {theme} from '../components/Global.styles';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    word-wrap: break-word;
+    font-kerning: normal;
+  }
+
+  body {
+    background: ${p => p.theme.background};
+  }
+`;
 
 export default class NextApp extends App {
   static async getInitialProps({Component, router, ctx}) {
@@ -40,7 +69,12 @@ export default class NextApp extends App {
 
     return (
       <Container>
-        <Component {...pageProps} />
+        <ThemeProvider theme={theme}>
+          <>
+            <GlobalStyle />
+            <Component {...pageProps} />
+          </>
+        </ThemeProvider>
       </Container>
     );
   }

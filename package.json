@@ -12,23 +12,17 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "compression": "^1.7.3",
     "downshift": "^2.2.2",
     "express": "^4.16.3",
-    "express-graphql": "^0.6.12",
     "graphql": "^14.0.2",
     "graphql-request": "^1.8.2",
-    "graphql-tag": "^2.9.2",
-    "graphql-tools": "^3.1.1",
-    "graphql-type-json": "^0.2.1",
-    "grid-styled": "^5.0.2",
     "helmet": "^3.13.0",
     "lodash": "^4.17.10",
     "next": "^6.1.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "styled-components": "^3.4.5"
+    "styled-components": "^4.0.0-beta.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

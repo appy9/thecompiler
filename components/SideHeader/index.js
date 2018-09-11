@@ -4,7 +4,7 @@ import React from 'react';
 import * as GSC from '../Global.styles';
 import {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} from '../../utils/constants';
 
-const CategoryHeader = props => {
+const SideHeader = props => {
   const {author, language, pageType, tag} = props;
 
   if (pageType) {
@@ -26,14 +26,22 @@ const CategoryHeader = props => {
     );
   }
 
-  return null;
+  return (
+    <GSC.Card>
+      <h2>the compiler</h2>
+      <p>stuff stuff stuff stuff</p>
+      <GSC.Button>
+        <a href="#">Contribute</a>
+      </GSC.Button>
+    </GSC.Card>
+  );
 };
 
-CategoryHeader.propTypes = {
+SideHeader.propTypes = {
   author: PropTypes.object,
   language: PropTypes.object,
   pageType: PropTypes.string,
   tag: PropTypes.object
 };
 
-export default CategoryHeader;
+export default SideHeader;

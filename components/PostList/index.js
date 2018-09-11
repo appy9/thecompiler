@@ -1,6 +1,6 @@
 import _map from 'lodash/map';
 import PropTypes from 'prop-types';
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
 import Post from '../Post';
 import * as GSC from '../Global.styles';
@@ -59,19 +59,19 @@ export default class PostList extends Component {
         {noItems ? (
           <h2>No items found</h2>
         ) : (
-          <Fragment>
+          <>
             {_map(items, (item, index) => (
               <Post key={index} {...item} />
             ))}
             {loading ? (
               <p>spinner</p>
             ) : showLoadMore ? (
-              <Fragment>
+              <>
                 {loadingError && <p>error</p>}
                 <p onClick={handlePaginate}>load more button</p>
-              </Fragment>
+              </>
             ) : null}
-          </Fragment>
+          </>
         )}
       </GSC.Card>
     );

@@ -2,13 +2,13 @@ import {request} from 'graphql-request';
 import _get from 'lodash/get';
 import getConfig from 'next/config';
 import Head from 'next/head';
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
-import CategoryHeader from '../components/CategoryHeader';
 import * as GSC from '../components/Global.styles';
 import Header from '../components/Header';
 import PostList from '../components/PostList';
-import SideLinks from '../components/SideLinks';
+import SideHeader from '../components/SideHeader';
+import SiteLinks from '../components/SiteLinks';
 import {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} from '../utils/constants';
 
 const {
@@ -155,13 +155,22 @@ export default class Index extends Component {
     const {count, loading, loadingError, offset, posts} = this.state;
 
     return (
-      <Fragment>
+      <>
         <Head>
           <title>thecompiler</title>
         </Head>
         <Header handleLogout={this.logOut} user={user} />
-        <GSC.Flex>
-          <GSC.TwoThirdColumn>
+        <GSC.Container>
+          <GSC.ColumnLeft>
+            <SideHeader
+              author={author}
+              language={language}
+              pageType={pageType}
+              tag={tag}
+            />
+            <SiteLinks />
+          </GSC.ColumnLeft>
+          <GSC.ColumnRight>
             <PostList
               handlePaginate={this.handlePaginate}
               items={posts}
@@ -169,18 +178,9 @@ export default class Index extends Component {
               loadingError={loadingError}
               showLoadMore={offset < count}
             />
-          </GSC.TwoThirdColumn>
-          <GSC.OneThirdColumn>
-            <CategoryHeader
-              author={author}
-              language={language}
-              pageType={pageType}
-              tag={tag}
-            />
-            <SideLinks />
-          </GSC.OneThirdColumn>
-        </GSC.Flex>
-      </Fragment>
+          </GSC.ColumnRight>
+        </GSC.Container>
+      </>
     );
   }
 }

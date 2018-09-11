@@ -1,7 +1,7 @@
 import _map from 'lodash/map';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
 import * as SC from './styles';
 
