@@ -5,7 +5,6 @@ const log = require('npmlog');
 const path = require('path');
 
 const authors = require('./authors.json');
-const languages = require('./languages.json');
 const posts = require('./posts.json');
 const tags = require('./tags.json');
 
@@ -18,11 +17,6 @@ function hasDuplicatesIds(items) {
 
 if (hasDuplicatesIds(authors)) {
   log.error('Authors with duplicate ids were found in authors.json');
-  process.exit(1);
-}
-
-if (hasDuplicatesIds(languages)) {
-  log.error('Languages with duplicate ids were found in languages.json');
   process.exit(1);
 }
 
@@ -66,15 +60,10 @@ let formattedPosts = _.map(posts, post => ({date_added: now, ...post}));
 // Order the keys, Order the lists themesleves
 formattedPosts = _.orderBy(orderKeys(formattedPosts), ['date_added'], ['desc']);
 let formattedAuthors = _.orderBy(orderKeys(authors), ['id']);
-let formattedLanguages = _.orderBy(orderKeys(languages), ['id']);
 let formattedTags = _.orderBy(orderKeys(tags), ['id']);
 
 // Generate search data
-const search = _.chain([
-  ...addType(authors, 'author'),
-  ...addType(languages, 'language'),
-  ...addType(tags, 'tag')
-])
+const search = _.chain([...addType(authors, 'author'), ...addType(tags, 'tag')])
   .map(({id, name, type}) => ({id, name, type}))
   .uniqBy('id')
   .orderBy('id')
@@ -83,7 +72,6 @@ const search = _.chain([
 // Save everything
 const fileTypes = [
   {fileName: 'authors.json', data: formattedAuthors},
-  {fileName: 'languages.json', data: formattedLanguages},
   {fileName: 'posts.json', data: formattedPosts},
   {fileName: 'tags.json', data: formattedTags},
   {fileName: 'search.json', data: search}

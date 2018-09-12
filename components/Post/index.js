@@ -18,27 +18,18 @@ export default class Post extends Component {
   }
 
   render() {
-    const {
-      authors,
-      date_published,
-      languages,
-      tags,
-      title,
-      type,
-      url
-    } = this.props;
+    const {authors, date_published, tags, title, type, url} = this.props;
 
     return (
-      <SC.Div>
-        <SC.InfoLine>
+      <GSC.Card>
+        <SC.Div>
           <a href={url} rel="noopener noreferrer" target="_blank">
             <SC.Title>{title}</SC.Title>
           </a>
-        </SC.InfoLine>
-        <SC.InfoLine>
-          <SC.Authors>
+          <GSC.Spacing />
+          <SC.ByLine>
             <p>
-              By
+              By{' '}
               {authors &&
                 _map(
                   authors,
@@ -46,47 +37,38 @@ export default class Post extends Component {
                     author ? (
                       <Link key={key} href={`/authors/${author.id}`}>
                         <a>
-                          <span>{author.name}</span>
+                          <span>{author.name} </span>
                         </a>
                       </Link>
                     ) : null
                 )}
             </p>
-            <span>|</span>
+            <p>|</p>
             <p>{_capitalize(type)}</p>
-            <span>|</span>
+            <p>|</p>
             <p>{dayjs(date_published).format('MMMM DD YYYY')}</p>
-          </SC.Authors>
-        </SC.InfoLine>
-        {(!_isEmpty(languages) || !_isEmpty(tags)) && (
-          <SC.InfoLine>
-            {languages &&
-              _map(
-                languages,
-                (language, key) =>
-                  language ? (
-                    <Link key={key} href={`/languages/${language.id}`}>
-                      <a>
-                        <span>{language.name}</span>
-                      </a>
-                    </Link>
-                  ) : null
-              )}
-            {tags &&
-              _map(
-                tags,
-                (tag, key) =>
-                  tag ? (
-                    <Link key={key} href={`/tags/${tag.id}`}>
-                      <a>
-                        <span>{tag.name}</span>
-                      </a>
-                    </Link>
-                  ) : null
-              )}
-          </SC.InfoLine>
-        )}
-      </SC.Div>
+          </SC.ByLine>
+          {tags &&
+            !_isEmpty(tags) && (
+              <>
+                <GSC.Spacing />
+                <SC.TagLine>
+                  {_map(
+                    tags,
+                    (tag, key) =>
+                      tag ? (
+                        <Link key={key} href={`/tags/${tag.id}`}>
+                          <a>
+                            <span>{tag.name}</span>
+                          </a>
+                        </Link>
+                      ) : null
+                  )}
+                </SC.TagLine>
+              </>
+            )}
+        </SC.Div>
+      </GSC.Card>
     );
   }
 }

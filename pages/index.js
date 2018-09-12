@@ -1,3 +1,4 @@
+import {Flex, Box} from '@rebass/grid';
 import {request} from 'graphql-request';
 import _get from 'lodash/get';
 import getConfig from 'next/config';
@@ -5,11 +6,12 @@ import Head from 'next/head';
 import React, {Component} from 'react';
 
 import * as GSC from '../components/Global.styles';
-import Header from '../components/Header';
+import FindTags from '../components/FindTags';
 import PostList from '../components/PostList';
 import SideHeader from '../components/SideHeader';
 import SiteLinks from '../components/SiteLinks';
-import {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} from '../utils/constants';
+import Sponsorship from '../components/Sponsorship';
+import {PAGE_AUTHOR, PAGE_TAG} from '../utils/constants';
 
 const {
   publicRuntimeConfig: {apiUrl}
@@ -52,15 +54,6 @@ export default class Index extends Component {
             }
           `;
           break;
-        case PAGE_LANG:
-          pageFilter = `language: $pageId`;
-          pageQuery = `
-            language(id: $pageId) {
-              id
-              name
-            }
-          `;
-          break;
         case PAGE_TAG:
           pageFilter = `tag: $pageId`;
           pageQuery = `
@@ -93,10 +86,6 @@ export default class Index extends Component {
             }
             date_added
             date_published
-            languages {
-              id
-              name
-            }
             title
             type
             url
@@ -151,7 +140,7 @@ export default class Index extends Component {
   }
 
   render() {
-    const {author, language, pageType, tag, user} = this.props;
+    const {author, language, pageType, tag} = this.props;
     const {count, loading, loadingError, offset, posts} = this.state;
 
     return (
@@ -159,26 +148,31 @@ export default class Index extends Component {
         <Head>
           <title>thecompiler</title>
         </Head>
-        <Header handleLogout={this.logOut} user={user} />
         <GSC.Container>
-          <GSC.ColumnLeft>
-            <SideHeader
-              author={author}
-              language={language}
-              pageType={pageType}
-              tag={tag}
-            />
-            <SiteLinks />
-          </GSC.ColumnLeft>
-          <GSC.ColumnRight>
-            <PostList
-              handlePaginate={this.handlePaginate}
-              items={posts}
-              loading={loading}
-              loadingError={loadingError}
-              showLoadMore={offset < count}
-            />
-          </GSC.ColumnRight>
+          <Flex>
+            <Box width={1 / 4} px={2}>
+              <SideHeader
+                author={author}
+                language={language}
+                pageType={pageType}
+                tag={tag}
+              />
+              <Sponsorship />
+            </Box>
+            <Box width={1 / 2} px={2}>
+              <PostList
+                handlePaginate={this.handlePaginate}
+                items={posts}
+                loading={loading}
+                loadingError={loadingError}
+                showLoadMore={offset < count}
+              />
+            </Box>
+            <Box width={1 / 4} px={2}>
+              <FindTags />
+              <SiteLinks />
+            </Box>
+          </Flex>
         </GSC.Container>
       </>
     );

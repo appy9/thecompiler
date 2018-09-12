@@ -1,51 +1,42 @@
 import styled from 'styled-components';
 
-export const Authors = styled.div`
-  p,
-  span {
-    color: ${p => p.theme.Grey500};
+export const ByLine = styled.div`
+  a {
+    color: black;
   }
 
   p {
     display: inline-block;
+    margin-right: 5px;
   }
 
+  span:hover {
+    color: ${p => p.theme.Blue300};
+    text-decoration: underline;
+  }
+`;
+
+export const Div = styled.div`
+  a {
+    text-decoration: none;
+  }
+`;
+
+export const TagLine = styled.div`
   span {
-    margin: 0px 5px;
+    color: ${p => p.theme.Grey500};
+    margin-right: 15px;
 
     &:hover {
+      color: ${p => p.theme.Blue300};
       text-decoration: underline;
     }
   }
 `;
 
-export const Div = styled.div`
-  padding: 16px 0;
-  border-bottom: 1px solid ${p => p.theme.Grey400};
-
-  a {
-    text-decoration: none;
-  }
-
-  &:first-of-type {
-    padding-top: 0px;
-  }
-
-  &:last-of-type {
-    border-bottom: none;
-  }
-`;
-
-export const InfoLine = styled.div`
-  margin-bottom: 4px;
-
-  &:last-of-type {
-    margin-bottom: none;
-  }
-`;
-
 export const Title = styled.p`
   font-size: 24px;
+  font-weight: 500;
   color: ${p => p.theme.Blue300};
 
   &:hover {

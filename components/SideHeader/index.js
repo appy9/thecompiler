@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -16,7 +17,12 @@ const SideHeader = props => {
 
     return (
       <GSC.Card>
-        <h2>{name}</h2>
+        <Link href="/">
+          <a>
+            <h2>the compiler</h2>
+          </a>
+        </Link>
+        <p>{name}</p>
         {url && (
           <a href={url} rel="noopener noreferrer" target="_blank">
             <p>website</p>
@@ -29,10 +35,6 @@ const SideHeader = props => {
   return (
     <GSC.Card>
       <h2>the compiler</h2>
-      <p>stuff stuff stuff stuff</p>
-      <GSC.Button>
-        <a href="#">Contribute</a>
-      </GSC.Button>
     </GSC.Card>
   );
 };

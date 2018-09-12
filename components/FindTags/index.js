@@ -1,5 +1,4 @@
 import {request} from 'graphql-request';
-import Downshift from 'downshift';
 import _debounce from 'lodash/debounce';
 import _map from 'lodash/map';
 import getConfig from 'next/config';
@@ -8,12 +7,13 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
 import * as SC from './styles';
+import * as GSC from '../Global.styles';
 
 const {
   publicRuntimeConfig: {apiUrl}
 } = getConfig();
 
-export default class SearchTypeahead extends Component {
+export default class FindTags extends Component {
   static propTypes = {
     defaultInputValue: PropTypes.string,
     handleSelection: PropTypes.func,
@@ -39,7 +39,9 @@ export default class SearchTypeahead extends Component {
     this.handleSearch = _debounce(this.handleSearch, 250);
   }
 
-  handleQueryChange(value) {
+  handleQueryChange(event) {
+    const value = event.target.value;
+
     if (value) {
       this.setState({queryText: value});
       this.handleSearch(value);
@@ -100,32 +102,12 @@ export default class SearchTypeahead extends Component {
     const hasItems = itemList.length > 0;
 
     return (
-      <Downshift
-        id="downshift-typeahead"
-        inputValue={queryText}
-        itemToString={item => ''}
-        onInputValueChange={this.handleQueryChange}
-        onSelect={this.handleSelection}
-      >
-        {({
-          getInputProps,
-          getItemProps,
-          isOpen,
-          highlightedIndex,
-          selectedItem
-        }) => (
-          <div style={{display: 'inline-block'}}>
-            <SC.Input {...getInputProps()} />
-            {isOpen &&
-              hasItems &&
-              _map(itemList, (item, key) => (
-                <p key={key} {...getItemProps({item})}>
-                  {item.name}
-                </p>
-              ))}
-          </div>
-        )}
-      </Downshift>
+      <GSC.Card>
+        <p>Find Tags</p>
+        <SC.Input onChange={this.handleQueryChange} value={queryText} />
+        {hasItems &&
+          _map(itemList, (item, key) => <p key={key}>{item.name}</p>)}
+      </GSC.Card>
     );
   }
 }

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
 import Post from '../Post';
-import * as GSC from '../Global.styles';
 
 const minimumBottomDistance = 150;
 
@@ -55,7 +54,7 @@ export default class PostList extends Component {
     const noItems = items.length === 0;
 
     return (
-      <GSC.Card>
+      <>
         {noItems ? (
           <h2>No items found</h2>
         ) : (
@@ -64,7 +63,7 @@ export default class PostList extends Component {
               <Post key={index} {...item} />
             ))}
             {loading ? (
-              <p>spinner</p>
+              <p>loading more posts</p>
             ) : showLoadMore ? (
               <>
                 {loadingError && <p>error</p>}
@@ -73,7 +72,7 @@ export default class PostList extends Component {
             ) : null}
           </>
         )}
-      </GSC.Card>
+      </>
     );
   }
 }

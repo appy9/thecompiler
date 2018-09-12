@@ -9,17 +9,11 @@ module.exports = gql`
     url: String
   }
 
-  type Language {
-    id: String
-    name: String
-  }
-
   type Post {
     authors: [Author]
     tags: [Tag]
     date_added: String
     date_published: String
-    languages: [Language]
     title: String
     type: String
     url: String
@@ -44,7 +38,6 @@ module.exports = gql`
 
   type Query {
     author(id: String!): Author
-    language(id: String!): Language
     posts(
       limit: Int!
       offset: Int!

@@ -1,8 +1,9 @@
 [
-  {"id": "babel", "name": "babel", "url": "https://babeljs.io"},
+  {"id": "babel", "name": "Babel", "url": "https://babeljs.io"},
   {"id": "css-in-js", "name": "CSS in JS"},
   {"id": "ember", "name": "Ember", "url": "https://www.emberjs.com"},
   {"id": "graphql", "name": "GraphQL", "url": "https://graphql.org"},
+  {"id": "javascript", "name": "Javascript"},
   {"id": "nextjs", "name": "Next.js", "url": "http://nextjs.org"},
   {"id": "prisma", "name": "Prisma", "url": "https://www.prisma.io"},
   {"id": "react", "name": "React", "url": "https://reactjs.org"},

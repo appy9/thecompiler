@@ -7,7 +7,6 @@ const matchSorter = require('match-sorter');
 
 const authors = require('../data/authors.json');
 const tags = require('../data/tags.json');
-const languages = require('../data/languages.json');
 const posts = require('../data/posts.json');
 const searchResults = require('../data/search.json');
 
@@ -19,21 +18,11 @@ const filterIncludesArray = (list, key, value) => {
   });
 };
 
-const getPosts = ({
-  author = '',
-  language = '',
-  tag = '',
-  limit = 10,
-  offset = 0
-}) => {
+const getPosts = ({author = '', tag = '', limit = 10, offset = 0}) => {
   let desiredPosts = posts;
 
   if (author) {
     desiredPosts = filterIncludesArray(desiredPosts, 'authors', author);
-  }
-
-  if (language) {
-    desiredPosts = filterIncludesArray(desiredPosts, 'languages', language);
   }
 
   if (tag) {
@@ -51,10 +40,6 @@ const getAuthor = ({id}) => {
   return _find(authors, ['id', id]);
 };
 
-const getLanguage = ({id}) => {
-  return _find(languages, ['id', id]);
-};
-
 const getTag = ({id}) => {
   return _find(tags, ['id', id]);
 };
@@ -62,12 +47,6 @@ const getTag = ({id}) => {
 const getAuthors = root => {
   return _map(root.authors, authorId => {
     return _find(authors, ['id', authorId]);
-  });
-};
-
-const getLanguages = root => {
-  return _map(root.languages, languageId => {
-    return _find(languages, ['id', languageId]);
   });
 };
 
@@ -84,8 +63,6 @@ const getTags = root => {
 module.exports = {
   getAuthor,
   getAuthors,
-  getLanguage,
-  getLanguages,
   getPosts,
   getSearchResults,
   getTag,

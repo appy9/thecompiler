@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 export const Button = styled.button`
   padding: 5px 7px;
@@ -23,7 +23,7 @@ export const Card = styled.div`
   background: white;
   margin: 16px 0;
   padding: 16px;
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid ${p => p.theme.Grey400};
 `;
 
@@ -52,6 +52,10 @@ export const Content = styled.div`
   padding: 20px;
 `;
 
+export const Spacing = styled.div`
+  margin: 10px 0;
+`;
+
 export const Tag = styled.span`
   padding: 5px 7px;
   border-radius: 3px;
@@ -68,6 +72,7 @@ export const Tag = styled.span`
 `;
 
 export const theme = {
+  background: '#F9FAFB',
   Blue100: '#B6E2FF',
   Blue200: '#6EC6FF',
   Blue300: '#2196F3',
@@ -114,5 +119,3 @@ export const theme = {
   Yellow400: '#C59C00',
   Yellow500: '#624D00'
 };
-
-theme.background = theme.Grey300;

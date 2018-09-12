@@ -4,7 +4,7 @@ const helmet = require('helmet');
 const next = require('next');
 const {default: getConfig} = require('next/config');
 
-const {PAGE_AUTHOR, PAGE_LANG, PAGE_TAG} = require('./utils/constants');
+const {PAGE_AUTHOR, PAGE_TAG} = require('./utils/constants');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({dev});
@@ -33,10 +33,6 @@ app.prepare().then(() => {
   // Custom route handling for the app
   server.get('/authors/:id', (req, res) => {
     app.render(req, res, '/', {page: PAGE_AUTHOR});
-  });
-
-  server.get('/languages/:id', (req, res) => {
-    app.render(req, res, '/', {page: PAGE_LANG});
   });
 
   server.get('/tags/:id', (req, res) => {

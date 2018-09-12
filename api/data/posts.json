@@ -3,8 +3,7 @@
     "authors": ["andrew-clark"],
     "date_added": "2018-09-10T15:02:25.941Z",
     "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["react-suspense"],
+    "tags": ["javascript", "react-suspense"],
     "title": "React Suspense",
     "type": "video",
     "url": "https://www.youtube.com/watch?v=z-6JC0_cOns"
@@ -21,8 +20,7 @@
     "authors": ["pranay-prakash", "thomas-fischer"],
     "date_added": "2018-09-10T15:02:25.941Z",
     "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["babel"],
+    "tags": ["javascript", "babel"],
     "title": "Optimizing Your Code with Babel",
     "type": "video",
     "url": "https://www.youtube.com/watch?v=XvTsxa9i13o"
@@ -31,8 +29,7 @@
     "authors": ["prosper-otemuyiwa"],
     "date_added": "2018-09-10T15:02:25.941Z",
     "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["nextjs"],
+    "tags": ["javascript", "nextjs"],
     "title": "Authentication and Authorization in Next.js",
     "type": "video",
     "url": "https://www.youtube.com/watch?v=bo4BbGwZsWo"
@@ -41,8 +38,7 @@
     "authors": ["jack-hanford"],
     "date_added": "2018-09-10T15:02:25.941Z",
     "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["nextjs"],
+    "tags": ["javascript", "nextjs"],
     "title": "Rewriting eaze.com with Next.js",
     "type": "video",
     "url": "https://www.youtube.com/watch?v=JjRV-l9jSYE"
@@ -51,7 +47,7 @@
     "authors": ["kylie-stewart"],
     "date_added": "2018-09-10T15:02:25.941Z",
     "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
+    "tags": ["javascript"],
     "title": "Using JavaScript to Teach Machines Basic Shit Things",
     "type": "video",
     "url": "https://www.youtube.com/watch?v=QaV7a64mUYE"
@@ -60,8 +56,7 @@
     "authors": ["jackie-luo"],
     "date_added": "2018-09-10T15:02:25.941Z",
     "date_published": "2018-05-28T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["ember", "react"],
+    "tags": ["javascript", "ember", "react"],
     "title": "From React to Ember: A Modern Comparison",
     "type": "video",
     "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
@@ -78,8 +73,7 @@
     "authors": ["honest.engineering"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-08-04T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["graphql"],
+    "tags": ["javascript", "graphql"],
     "title": "Why use GraphQL, good and bad reasons",
     "type": "article",
     "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons"
@@ -88,8 +82,7 @@
     "authors": ["prisma"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2017-12-06T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["graphql", "prisma"],
+    "tags": ["javascript", "graphql", "prisma"],
     "title": "How do GraphQL remote schemas work?",
     "type": "article",
     "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7"
@@ -98,8 +91,7 @@
     "authors": ["prisma"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2017-12-12T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["graphql", "prisma"],
+    "tags": ["javascript", "graphql", "prisma"],
     "title": "GraphQL Schema Stitching explained: Schema Delegation",
     "type": "article",
     "url": "https://www.prisma.io/blog/graphql-schema-stitching-explained-schema-delegation-4c6caf468405"
@@ -108,8 +100,7 @@
     "authors": ["prisma"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-01-12T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["graphql", "prisma"],
+    "tags": ["javascript", "graphql", "prisma"],
     "title": "Reusing & Composing GraphQL APIs with GraphQL Bindings",
     "type": "article",
     "url": "https://www.prisma.io/blog/reusing-and-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5"
@@ -118,8 +109,7 @@
     "authors": ["eugene-gluhotorenko"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-08-13T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["css-in-js", "styled-components"],
+    "tags": ["javascript", "css-in-js", "styled-components"],
     "title": "How styled-components works: A deep dive under the hood",
     "type": "article",
     "url": "https://medium.com/styled-components/how-styled-components-works-618a69970421"
@@ -128,8 +118,7 @@
     "authors": ["max-stoiber"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-02-07T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["server-side-rendering"],
+    "tags": ["javascript", "server-side-rendering"],
     "title": "Streaming Server-Side Rendering and Caching at Spectrum",
     "type": "article",
     "url": "https://zeit.co/blog/streaming-server-rendering-at-spectrum"
@@ -138,8 +127,7 @@
     "authors": ["max-stoiber"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2018-02-21T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["graphql"],
+    "tags": ["javascript", "graphql"],
     "title": "Securing Your GraphQL API from Malicious Queries",
     "type": "article",
     "url": "https://blog.apollographql.com/securing-your-graphql-api-from-malicious-queries-16130a324a6b"
@@ -148,8 +136,7 @@
     "authors": ["max-stoiber"],
     "date_added": "2018-08-28T22:55:17.795Z",
     "date_published": "2016-11-30T00:00:00",
-    "languages": ["javascript"],
-    "tags": ["styled-components"],
+    "tags": ["javascript", "styled-components"],
     "title": "The magic behind 💅 styled-components",
     "type": "article",
     "url": "https://mxstbr.blog/2016/11/styled-components-magic-explained"

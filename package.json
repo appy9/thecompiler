@@ -12,9 +12,9 @@
     "test": "NODE_ENV=test jest"
   },
   "dependencies": {
+    "@rebass/grid": "^6.0.0-2",
     "compression": "^1.7.3",
     "dayjs": "^1.7.5",
-    "downshift": "^2.2.2",
     "express": "^4.16.3",
     "graphql": "^14.0.2",
     "graphql-request": "^1.8.2",
