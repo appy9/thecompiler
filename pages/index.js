@@ -15,7 +15,7 @@ const {
   publicRuntimeConfig: {apiUrl}
 } = getConfig();
 
-const listSize = 4;
+const listSize = 20;
 
 export default class Index extends Component {
   static async getInitialProps(ctx) {

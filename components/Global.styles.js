@@ -23,6 +23,8 @@ export const Card = styled.div`
   background: white;
   margin: 16px 0;
   padding: 16px;
+  border-radius: 3px;
+  border: 1px solid ${p => p.theme.Grey400};
 `;
 
 export const Column = styled.div`
@@ -48,6 +50,21 @@ export const Content = styled.div`
   position: relative;
   width: auto;
   padding: 20px;
+`;
+
+export const Tag = styled.span`
+  padding: 5px 7px;
+  border-radius: 3px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+
+  color: ${p => p.theme.Blue400};
+  background: ${p => p.theme.Blue100};
+
+  &:hover {
+    background: ${p => p.theme.Blue200};
+  }
 `;
 
 export const theme = {

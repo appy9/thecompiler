@@ -7,6 +7,8 @@ import Router from 'next/router';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
+import * as SC from './styles';
+
 const {
   publicRuntimeConfig: {apiUrl}
 } = getConfig();
@@ -112,8 +114,8 @@ export default class SearchTypeahead extends Component {
           highlightedIndex,
           selectedItem
         }) => (
-          <div>
-            <input {...getInputProps()} />
+          <div style={{display: 'inline-block'}}>
+            <SC.Input {...getInputProps()} />
             {isOpen &&
               hasItems &&
               _map(itemList, (item, key) => (

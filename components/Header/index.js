@@ -8,7 +8,7 @@ const Header = ({handleLogout, user}) => (
   <SC.Header>
     <GSC.Container>
       <a href="/">
-        <p>the compiler</p>
+        <SC.Logo>the compiler</SC.Logo>
       </a>
       <Typeahead />
     </GSC.Container>
