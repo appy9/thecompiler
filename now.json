@@ -2,7 +2,7 @@
   "name": "thecompiler",
   "alias": ["thecompiler.site"],
   "env": {
-    "API_HOST": "thecompiler.site",
+    "API_HOST": "https://thecompiler.site",
     "NODE_ENV": "production"
   },
   "features": {
