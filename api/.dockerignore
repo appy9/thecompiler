@@ -1,7 +1,0 @@
-*
-!controllers
-!data
-!graphql
-!server.js
-!package.json
-!package-lock.json

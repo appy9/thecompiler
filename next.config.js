@@ -1,5 +1,6 @@
 const serverPort = parseInt(process.env.PORT, 10) || 3000;
-const apiUrl = process.env.API_HOST || 'http://localhost:8080';
+const apiHost = process.env.API_HOST || `http://localhost:${serverPort}`;
+const apiUrl = `${apiHost}/graphql`;
 
 module.exports = {
   serverRuntimeConfig: {},

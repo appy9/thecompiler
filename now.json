@@ -1,9 +1,12 @@
 {
   "name": "thecompiler",
-  "alias": ["thecompiler.site", "thecompiler.now.sh"],
+  "alias": ["thecompiler.site"],
   "env": {
-    "API_HOST": "https://api.thecompiler.site",
+    "API_HOST": "thecompiler.site",
     "NODE_ENV": "production"
+  },
+  "features": {
+    "cloud": "v2"
   },
   "type": "docker"
 }
