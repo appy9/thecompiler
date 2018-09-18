@@ -1,5 +1,8 @@
 *
 !components
+!controllers
+!data
+!graphql
 !pages
 !static
 !utils
