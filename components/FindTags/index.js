@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
 import * as SC from './styles';
-import * as GSC from '../Global.styles';
+import * as GSC from '../Global/styles';
 
 const {
   publicRuntimeConfig: {apiUrl}

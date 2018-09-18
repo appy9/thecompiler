@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const Button = styled.button`
   padding: 5px 7px;
@@ -23,7 +23,7 @@ export const Card = styled.div`
   background: white;
   margin: 16px 0;
   padding: 16px;
-  border-radius: 2px;
+  ${'' /* border-radius: 2px; */}
   border: 1px solid ${p => p.theme.Grey400};
 `;
 
@@ -71,8 +71,41 @@ export const Tag = styled.span`
   }
 `;
 
+export const globalCSS = css`
+  * {
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    word-wrap: break-word;
+    font-kerning: normal;
+    background: ${p => p.theme.background};
+  }
+`;
+
+// Grey100: '#FCFCFD',
+// Grey200: '#F9FAFB',
+// Grey300: '#F4F5F7',
+// Grey400: '#C1C2C4',
+// Grey500: '#919294',
+
 export const theme = {
-  background: '#F9FAFB',
+  // background: '#F9FAFB',
+  background: '#F4F5F7',
   Blue100: '#B6E2FF',
   Blue200: '#6EC6FF',
   Blue300: '#2196F3',

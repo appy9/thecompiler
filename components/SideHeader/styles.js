@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Div = styled.div`
+export const Title = styled.div`
+  font-weight: 500;
+
   a {
     color: black;
     text-decoration: none;
@@ -16,6 +18,5 @@ export const Div = styled.div`
 
   p {
     display: inline-block;
-    margin-right: 5px;
   }
 `;

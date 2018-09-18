@@ -3,36 +3,9 @@ import Error from 'next/error';
 import React from 'react';
 import {createGlobalStyle, ThemeProvider} from 'styled-components';
 
-import {theme} from '../components/Global.styles';
+import {globalCSS, theme} from '../components/Global/styles';
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    vertical-align: baseline;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-  }
-
-  *:focus {
-    outline: none;
-  }
-
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 400;
-    line-height: 1.25;
-    word-wrap: break-word;
-    font-kerning: normal;
-  }
-
-  body {
-    background: ${p => p.theme.background};
-  }
-`;
+const GlobalStyle = createGlobalStyle`${globalCSS}`;
 
 export default class NextApp extends App {
   static async getInitialProps({Component, router, ctx}) {

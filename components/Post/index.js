@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React, {Component} from 'react';
 
 import * as SC from './styles';
-import * as GSC from '../Global.styles';
+import * as GSC from '../Global/styles';
 
 export default class Post extends Component {
   static propTypes = {};
@@ -43,8 +43,8 @@ export default class Post extends Component {
                     ) : null
                 )}
             </p>
-            <p>|</p>
-            <p>{_capitalize(type)}</p>
+            {/* <p>|</p> */}
+            {/* <p>{_capitalize(type)}</p> */}
             <p>|</p>
             <p>{dayjs(date_published).format('MMMM DD YYYY')}</p>
           </SC.ByLine>

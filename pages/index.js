@@ -5,7 +5,7 @@ import getConfig from 'next/config';
 import Head from 'next/head';
 import React, {Component} from 'react';
 
-import * as GSC from '../components/Global.styles';
+import * as GSC from '../components/Global/styles';
 import FindTags from '../components/FindTags';
 import PostList from '../components/PostList';
 import SideHeader from '../components/SideHeader';
@@ -150,7 +150,7 @@ export default class Index extends Component {
         </Head>
         <GSC.Container>
           <Flex>
-            <Box width={1 / 4} px={2}>
+            <Box width={1 / 3} px={2}>
               <SideHeader
                 author={author}
                 language={language}
@@ -158,8 +158,10 @@ export default class Index extends Component {
                 tag={tag}
               />
               <Sponsorship />
+              <FindTags />
+              <SiteLinks />
             </Box>
-            <Box width={1 / 2} px={2}>
+            <Box width={2 / 3} px={2}>
               <PostList
                 handlePaginate={this.handlePaginate}
                 items={posts}
@@ -167,10 +169,6 @@ export default class Index extends Component {
                 loadingError={loadingError}
                 showLoadMore={offset < count}
               />
-            </Box>
-            <Box width={1 / 4} px={2}>
-              <FindTags />
-              <SiteLinks />
             </Box>
           </Flex>
         </GSC.Container>
