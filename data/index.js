@@ -1,6 +1,5 @@
 const fs = require('fs');
 const _ = require('lodash');
-const moment = require('moment');
 const log = require('npmlog');
 const path = require('path');
 
@@ -53,17 +52,14 @@ const orderKeys = list =>
  */
 const addType = (list, type) => _.map(list, item => ({...item, type}));
 
-// Add dates to posts without dates
-const now = moment.utc().toISOString();
-let formattedPosts = _.map(posts, post => ({date_added: now, ...post}));
-
 // Order the keys, Order the lists themesleves
-formattedPosts = _.orderBy(orderKeys(formattedPosts), ['date_added'], ['desc']);
+let formattedPosts = _.orderBy(orderKeys(posts), ['date_published'], ['desc']);
 let formattedAuthors = _.orderBy(orderKeys(authors), ['id']);
 let formattedTags = _.orderBy(orderKeys(tags), ['id']);
 
 // Generate search data
-const search = _.chain([...addType(authors, 'author'), ...addType(tags, 'tag')])
+const search = [...addType(authors, 'author'), ...addType(tags, 'tag')];
+const formattedsearch = _.chain(search)
   .map(({id, name, type}) => ({id, name, type}))
   .uniqBy('id')
   .orderBy('id')
@@ -74,7 +70,7 @@ const fileTypes = [
   {fileName: 'authors.json', data: formattedAuthors},
   {fileName: 'posts.json', data: formattedPosts},
   {fileName: 'tags.json', data: formattedTags},
-  {fileName: 'search.json', data: search}
+  {fileName: 'search.json', data: formattedsearch}
 ];
 
 _.forEach(fileTypes, ({data, fileName}) => {

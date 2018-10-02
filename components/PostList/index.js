@@ -2,6 +2,7 @@ import _map from 'lodash/map';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
+import {Card} from '../Global/styles';
 import Post from '../Post';
 
 const minimumBottomDistance = 150;
@@ -54,7 +55,7 @@ export default class PostList extends Component {
     const noItems = items.length === 0;
 
     return (
-      <>
+      <Card>
         {noItems ? (
           <h2>No items found</h2>
         ) : (
@@ -72,7 +73,7 @@ export default class PostList extends Component {
             ) : null}
           </>
         )}
-      </>
+      </Card>
     );
   }
 }

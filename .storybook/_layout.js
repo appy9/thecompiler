@@ -1,8 +1,7 @@
-import _ from 'lodash';
-import React, {Component} from 'react';
-import styled, {createGlobalStyle} from 'styled-components';
+import React from 'react';
+import styled, {createGlobalStyle, ThemeProvider} from 'styled-components';
 
-import {globalCSS} from '../components/Global/styles';
+import {globalCSS, theme} from '../components/Global/styles';
 
 const GlobalStyle = createGlobalStyle`${globalCSS}`;
 
@@ -11,10 +10,12 @@ const Div = styled.div`
 `;
 
 const Layout = storyFn => (
-  <>
-    <GlobalStyle />
-    <Div>{storyFn()}</Div>
-  </>
+  <ThemeProvider theme={theme}>
+    <>
+      <GlobalStyle />
+      <Div>{storyFn()}</Div>
+    </>
+  </ThemeProvider>
 );
 
 export default Layout;

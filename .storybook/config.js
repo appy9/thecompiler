@@ -1,14 +1,21 @@
-import {addDecorator, configure} from '@storybook/react';
-import {withThemes} from 'storybook-styled-components';
+/* eslint-disable import/first */
 
-import {theme} from '../components/Global/styles';
+/**
+ * Set the next config first or youll have problems
+ * with files trying to access it within storybooks
+ */
+import {setConfig} from 'next/config';
+import {publicRuntimeConfig} from '../next.config';
+
+setConfig({publicRuntimeConfig});
+
+import {addDecorator, configure} from '@storybook/react';
+
 import Layout from './_layout';
 
-addDecorator(withThemes([theme]));
 addDecorator(Layout);
 
-// automatically import all files named stories.js
-const req = require.context('../components', true, /stories.js$/);
+const req = require.context('../stories');
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }

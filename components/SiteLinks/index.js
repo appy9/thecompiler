@@ -1,9 +1,9 @@
 import React from 'react';
 
-import * as SC from './styles';
+import {Div} from './styles';
 
 const SiteLinks = () => (
-  <SC.Div>
+  <Div>
     <a href="https://twitter.com/" rel="noopener noreferrer" target="_blank">
       <p>Twitter</p>
     </a>
@@ -21,7 +21,13 @@ const SiteLinks = () => (
     >
       <p>Code of Conduct</p>
     </a>
-  </SC.Div>
+    <a href="/#" rel="noopener noreferrer" target="_blank">
+      <p>Report or Flag</p>
+    </a>
+    <a href="/#" rel="noopener noreferrer" target="_blank">
+      <p>Contact</p>
+    </a>
+  </Div>
 );
 
 export default SiteLinks;

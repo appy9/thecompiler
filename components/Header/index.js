@@ -1,3 +1,5 @@
+import {Flex, Box} from '@rebass/grid';
+import Downshift from 'downshift';
 import {request} from 'graphql-request';
 import _debounce from 'lodash/debounce';
 import _map from 'lodash/map';
@@ -6,14 +8,21 @@ import Router from 'next/router';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
-import * as SC from './styles';
-import * as GSC from '../Global/styles';
+import {
+  Header as SCHeader,
+  Link,
+  Input,
+  Item,
+  Items,
+  SubmitLink
+} from './styles';
+import {Container} from '../Global/styles';
 
 const {
   publicRuntimeConfig: {apiUrl}
 } = getConfig();
 
-export default class FindTags extends Component {
+export default class Header extends Component {
   static propTypes = {
     defaultInputValue: PropTypes.string,
     handleSelection: PropTypes.func,
@@ -27,8 +36,8 @@ export default class FindTags extends Component {
     super(props);
 
     this.state = {
-      queryText: props.defaultInputValue || '',
-      itemList: []
+      itemList: [],
+      queryText: props.defaultInputValue || ''
     };
 
     this.handleSearch = this.handleSearch.bind(this);
@@ -39,9 +48,7 @@ export default class FindTags extends Component {
     this.handleSearch = _debounce(this.handleSearch, 250);
   }
 
-  handleQueryChange(event) {
-    const value = event.target.value;
-
+  handleQueryChange(value) {
     if (value) {
       this.setState({queryText: value});
       this.handleSearch(value);
@@ -102,12 +109,54 @@ export default class FindTags extends Component {
     const hasItems = itemList.length > 0;
 
     return (
-      <GSC.Card>
-        <p>Find Tags</p>
-        <SC.Input onChange={this.handleQueryChange} value={queryText} />
-        {hasItems &&
-          _map(itemList, (item, key) => <p key={key}>{item.name}</p>)}
-      </GSC.Card>
+      <SCHeader>
+        <Container>
+          <Flex>
+            <Box width={1} px={2}>
+              <Link href="/">
+                <h1>the compiler</h1>
+              </Link>
+              <Downshift
+                id="downshift-typeahead"
+                inputValue={queryText}
+                itemToString={item => ''}
+                onInputValueChange={this.handleQueryChange}
+                onSelect={this.handleSelection}
+              >
+                {({
+                  getInputProps,
+                  getItemProps,
+                  isOpen,
+                  highlightedIndex,
+                  selectedItem
+                }) => (
+                  <div style={{display: 'inline-block'}}>
+                    <Input {...getInputProps()} />
+
+                    {isOpen &&
+                      hasItems && (
+                        <Items>
+                          {_map(itemList, (item, key) => (
+                            <Item
+                              key={key}
+                              highlighted={key === highlightedIndex}
+                              {...getItemProps({item})}
+                            >
+                              {item.name}
+                            </Item>
+                          ))}
+                        </Items>
+                      )}
+                  </div>
+                )}
+              </Downshift>
+              <SubmitLink href="/">
+                <p>submit</p>
+              </SubmitLink>
+            </Box>
+          </Flex>
+        </Container>
+      </SCHeader>
     );
   }
 }

@@ -2,12 +2,10 @@ import styled from 'styled-components';
 
 export const Div = styled.div`
   a {
-    color: black;
+    color: ${p => p.theme.GreyDark};
     text-decoration: none;
 
     &:hover {
-      color: ${p => p.theme.Blue300};
-
       p {
         text-decoration: underline;
       }
@@ -16,6 +14,7 @@ export const Div = styled.div`
 
   p {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 15px;
+    line-height: 30px;
   }
 `;

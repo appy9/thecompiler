@@ -1,12 +1,12 @@
 import React from 'react';
 
-import * as SC from './styles';
-import * as GSC from '../Global/styles';
+// import {} from './styles';
+import {Card} from '../Global/styles';
 
 const Sponsorship = () => (
-  <GSC.Card>
+  <Card>
     <p>sponsorship</p>
-  </GSC.Card>
+  </Card>
 );
 
 export default Sponsorship;

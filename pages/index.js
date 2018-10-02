@@ -2,11 +2,11 @@ import {Flex, Box} from '@rebass/grid';
 import {request} from 'graphql-request';
 import _get from 'lodash/get';
 import getConfig from 'next/config';
-import Head from 'next/head';
 import React, {Component} from 'react';
 
-import * as GSC from '../components/Global/styles';
-import FindTags from '../components/FindTags';
+import {Container} from '../components/Global/styles';
+import Header from '../components/Header';
+import Meta from '../components/Meta';
 import PostList from '../components/PostList';
 import SideHeader from '../components/SideHeader';
 import SiteLinks from '../components/SiteLinks';
@@ -145,23 +145,11 @@ export default class Index extends Component {
 
     return (
       <>
-        <Head>
-          <title>thecompiler</title>
-        </Head>
-        <GSC.Container>
+        <Meta />
+        <Header />
+        <Container>
           <Flex>
-            <Box width={1 / 3} px={2}>
-              <SideHeader
-                author={author}
-                language={language}
-                pageType={pageType}
-                tag={tag}
-              />
-              <Sponsorship />
-              <FindTags />
-              <SiteLinks />
-            </Box>
-            <Box width={2 / 3} px={2}>
+            <Box mx="auto" width={2 / 3} px={2}>
               <PostList
                 handlePaginate={this.handlePaginate}
                 items={posts}
@@ -170,8 +158,18 @@ export default class Index extends Component {
                 showLoadMore={offset < count}
               />
             </Box>
+            <Box mx="auto" width={1 / 3} px={2}>
+              <SideHeader
+                author={author}
+                language={language}
+                pageType={pageType}
+                tag={tag}
+              />
+              <Sponsorship />
+              <SiteLinks />
+            </Box>
           </Flex>
-        </GSC.Container>
+        </Container>
       </>
     );
   }

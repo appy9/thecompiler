@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
 import {storiesOf} from '@storybook/react';
 
-import Post from './index';
+import Post from '../components/Post';
 
 const post = {
-  authors: ['andrew-clark'],
-  date_added: '2018-09-10T15:02:25.941Z',
+  authors: [{id: 'andrew-clark', name: 'Andrew Clark'}],
   date_published: '2018-05-28T00:00:00',
-  tags: ['javascript', 'react-suspense'],
+  tags: [
+    {id: 'javascript', name: 'Javascript'},
+    {id: 'react-suspense', name: 'React Suspense'}
+  ],
   title: 'React Suspense',
-  type: 'post',
   url: '#'
 };
 
