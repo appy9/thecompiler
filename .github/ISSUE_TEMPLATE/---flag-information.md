@@ -12,6 +12,6 @@ Is it related to a post, author, tag, etc?
 **What is wrong with the information**
 Did we get something wrong or is the information not relevant to the site?
 
----
-
+<!---
 Thank you for helping to make the compiler better!
+-->
