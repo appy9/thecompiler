@@ -10,14 +10,8 @@ const tags = require('../data/tags.json');
 const posts = require('../data/posts.json');
 const searchResults = require('../data/search.json');
 
-const filterIncludesArray = (list, key, value) => {
-  return _filter(list, item => {
-    console.log(item[key], value);
-
-    return _includes(item[key], value);
-  });
-};
-
+const filterIncludesArray = (list, key, value) =>
+  _filter(list, item => _includes(item[key], value));
 const getPosts = ({author = '', tag = '', limit = 10, offset = 0}) => {
   let desiredPosts = posts;
 
