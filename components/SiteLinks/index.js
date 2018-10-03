@@ -19,7 +19,7 @@ const SiteLinks = () => (
       <p>Github</p>
     </a>
     <a
-      href="https://github.com/onthecompiler/thecompiler/CODE_OF_CONDUCT.md"
+      href="https://github.com/onthecompiler/thecompiler/blob/master/CODE_OF_CONDUCT.md"
       rel="noopener noreferrer"
       target="_blank"
     >
