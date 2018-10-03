@@ -150,7 +150,11 @@ export default class Header extends Component {
                   </div>
                 )}
               </Downshift>
-              <SubmitLink href="/">
+              <SubmitLink
+                href="https://github.com/onthecompiler/thecompiler/issues/new?template=submission.md"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <p>submit</p>
               </SubmitLink>
             </Box>
