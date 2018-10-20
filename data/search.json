@@ -22,11 +22,13 @@
   {"id": "prisma", "name": "Prisma", "type": "author"},
   {"id": "prosper-otemuyiwa", "name": "Prosper Otemuyiwa", "type": "author"},
   {"id": "react", "name": "React", "type": "tag"},
+  {"id": "react-router", "name": "React Router", "type": "tag"},
   {"id": "react-suspense", "name": "React Suspense", "type": "tag"},
   {
     "id": "server-side-rendering",
     "name": "Server Side Rendering",
     "type": "tag"
   },
-  {"id": "thomas-fischer", "name": "Thomas Fischer", "type": "author"}
+  {"id": "thomas-fischer", "name": "Thomas Fischer", "type": "author"},
+  {"id": "tyler-mcginnis", "name": "Tyler McGinnis", "type": "author"}
 ]

@@ -68,5 +68,12 @@
     "twitter": "unicodeveloper",
     "url": "http://www.prosperotemuyiwa.com"
   },
-  {"id": "thomas-fischer", "name": "Thomas Fischer", "twitter": "tom__fischer"}
+  {"id": "thomas-fischer", "name": "Thomas Fischer", "twitter": "tom__fischer"},
+  {
+    "github": "tylermcginnis",
+    "id": "tyler-mcginnis",
+    "name": "Tyler McGinnis",
+    "twitter": "tylermcginnis",
+    "url": "https://tylermcginnis.com"
+  }
 ]

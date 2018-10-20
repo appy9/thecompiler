@@ -1,5 +1,12 @@
 [
   {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-10-04T00:00:00",
+    "tags": ["javascript"],
+    "title": "A Beginner's Guide to JavaScript's Prototype",
+    "url": "https://tylermcginnis.com/beginners-guide-to-javascript-prototype"
+  },
+  {
     "authors": ["eugene-gluhotorenko"],
     "date_published": "2018-08-13T00:00:00",
     "tags": ["javascript", "css-in-js", "styled-components"],
@@ -12,6 +19,20 @@
     "tags": ["javascript", "graphql"],
     "title": "Why use GraphQL, good and bad reasons",
     "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-07-10T00:00:00",
+    "tags": ["javascript", "react"],
+    "title": "Building ChatBots with React & AWS",
+    "url": "https://tylermcginnis.com/building-chatbots-with-react-aws"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Ambiguous Matches with React Router v4",
+    "url": "https://tylermcginnis.com/react-router-ambiguous-matches"
   },
   {
     "authors": ["andrew-clark"],
@@ -62,10 +83,52 @@
     "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
   },
   {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-04-25T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Route Config with React Router v4",
+    "url": "https://tylermcginnis.com/react-router-route-config"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-04-05T00:00:00",
+    "tags": ["javascript", "react", "graphql"],
+    "title": "Building Serverless React GraphQL Applications with AWS AppSync",
+    "url": "https://tylermcginnis.com/building-serverless-react-graphql-apps-with-aws-appsync"
+  },
+  {
     "authors": ["carolyn-stransky"],
     "date_published": "2018-04-05T00:00:00",
     "title": "Humanizing Your Documentation",
     "url": "https://www.youtube.com/watch?v=FvPXMUuUCS4"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-03-26T00:00:00",
+    "tags": ["javascript"],
+    "title": "WTF is this - Understanding the this keyword, call, apply, and bind in JavaScript",
+    "url": "https://tylermcginnis.com/this-keyword-call-apply-bind-javascript"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-03-22T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Query Strings with React Router",
+    "url": "https://tylermcginnis.com/react-router-query-strings"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-03-12T00:00:00",
+    "tags": ["javascript", "react"],
+    "title": "React Tutorial: A Comprehensive Guide to learning React.js in 2018",
+    "url": "https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-03-07T00:00:00",
+    "tags": ["javascript", "react", "react-router", "server-side-rendering"],
+    "title": "Server Rendering with React and React Router",
+    "url": "https://tylermcginnis.com/react-router-server-rendering"
   },
   {
     "authors": ["max-stoiber"],
@@ -75,6 +138,13 @@
     "url": "https://blog.apollographql.com/securing-your-graphql-api-from-malicious-queries-16130a324a6b"
   },
   {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-02-12T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Animated Transitions with React Router",
+    "url": "https://tylermcginnis.com/react-router-animated-transitions"
+  },
+  {
     "authors": ["max-stoiber"],
     "date_published": "2018-02-07T00:00:00",
     "tags": ["javascript", "server-side-rendering"],
@@ -82,11 +152,67 @@
     "url": "https://zeit.co/blog/streaming-server-rendering-at-spectrum"
   },
   {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-02-05T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Pass props to a component rendered by React Router",
+    "url": "https://tylermcginnis.com/react-router-pass-props-to-components"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-02-01T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Fixing the \"cannot GET /URL\" error on refresh with React Router (or how client side routers work)",
+    "url": "https://tylermcginnis.com/react-router-cannot-get-url-refresh"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-01-29T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Nested routes with React Router v4",
+    "url": "https://tylermcginnis.com/react-router-nested-routes"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-01-25T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Programmatically navigate with React Router",
+    "url": "https://tylermcginnis.com/react-router-programmatically-navigate"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-01-18T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Handling 404 pages (catch all routes) with React Router v4",
+    "url": "https://tylermcginnis.com/react-router-handling-404-pages"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-01-16T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "URL Parameters with React Router",
+    "url": "https://tylermcginnis.com/react-router-url-parameters"
+  },
+  {
     "authors": ["prisma"],
     "date_published": "2018-01-12T00:00:00",
     "tags": ["javascript", "graphql", "prisma"],
     "title": "Reusing & Composing GraphQL APIs with GraphQL Bindings",
     "url": "https://www.prisma.io/blog/reusing-and-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-01-11T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Code Splitting with React and React Router",
+    "url": "https://tylermcginnis.com/react-router-code-splitting"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2018-01-10T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "React Router v4: Philosophy and Introduction",
+    "url": "https://tylermcginnis.com/react-router-philosophy-introduction"
   },
   {
     "authors": ["prisma"],
@@ -101,6 +227,20 @@
     "tags": ["javascript", "graphql", "prisma"],
     "title": "How do GraphQL remote schemas work?",
     "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2017-11-13T00:00:00",
+    "tags": ["javascript", "react", "react-router"],
+    "title": "Protected routes and authentication with React Router v4",
+    "url": "https://tylermcginnis.com/react-router-protected-routes-authentication"
+  },
+  {
+    "authors": ["tyler-mcginnis"],
+    "date_published": "2017-10-12T00:00:00",
+    "tags": ["javascript"],
+    "title": "Arrow Functions in JavaScript",
+    "url": "https://tylermcginnis.com/arrow-functions"
   },
   {
     "authors": ["max-stoiber"],

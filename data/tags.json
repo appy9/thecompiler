@@ -8,6 +8,11 @@
   {"id": "prisma", "name": "Prisma", "url": "https://www.prisma.io"},
   {"id": "react", "name": "React", "url": "https://reactjs.org"},
   {
+    "id": "react-router",
+    "name": "React Router",
+    "url": "https://reacttraining.com/react-router"
+  },
+  {
     "id": "react-suspense",
     "name": "React Suspense",
     "url": "https://github.com/facebook/react/issues/13206"
