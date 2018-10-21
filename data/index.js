@@ -3,26 +3,8 @@ const _ = require('lodash');
 const log = require('npmlog');
 const path = require('path');
 
-const authors = require('./authors.json');
 const posts = require('./posts.json');
-const tags = require('./tags.json');
-
-// Check for duplicate uids
-function hasDuplicatesIds(items) {
-  const ids = _.map(items, ({id}) => id);
-
-  return _.uniq(ids).length !== ids.length;
-}
-
-if (hasDuplicatesIds(authors)) {
-  log.error('Authors with duplicate ids were found in authors.json');
-  process.exit(1);
-}
-
-if (hasDuplicatesIds(tags)) {
-  log.error('tags with duplicate ids were found in tags.json');
-  process.exit(1);
-}
+const {createId} = require('../utils/ids');
 
 /**
  * Order the keys in an object
@@ -44,33 +26,61 @@ const orderKeys = list =>
     )
     .value();
 
-/**
- * Add a type to the list of items
- * @param  {Array}  list to order
- * @param  {String} type the type to add to the items
- * @return {Array}  the new list
- */
-const addType = (list, type) => _.map(list, item => ({...item, type}));
-
-// Order the keys, Order the lists themesleves
-let formattedPosts = _.orderBy(orderKeys(posts), ['date_published'], ['desc']);
-let formattedAuthors = _.orderBy(orderKeys(authors), ['id']);
-let formattedTags = _.orderBy(orderKeys(tags), ['id']);
+// Order the keys, Order the list itself
+const formattedPosts = _.orderBy(
+  orderKeys(posts),
+  ['date_published'],
+  ['desc']
+);
 
 // Generate search data
-const search = [...addType(authors, 'author'), ...addType(tags, 'tag')];
-const formattedsearch = _.chain(search)
-  .map(({id, name, type}) => ({id, name, type}))
-  .uniqBy('id')
-  .orderBy('id')
+const search = _.chain(formattedPosts)
+  .reduce(
+    (postResult, post) => {
+      postResult.authors = [...postResult.authors, ...(post.authors || [])];
+      postResult.tags = [...postResult.tags, ...(post.tags || [])];
+
+      return postResult;
+    },
+    {authors: [], tags: []}
+  )
+  .reduce((searchResult, groupOfInfo, index) => {
+    const groupOfResults = _.chain(groupOfInfo)
+      .uniq()
+      .reduce((result, authorOrTag) => {
+        result.push({
+          id: createId(authorOrTag),
+          name: authorOrTag,
+          type: index
+        });
+
+        return result;
+      }, [])
+      .value();
+
+    searchResult = [...searchResult, ...groupOfResults];
+
+    return searchResult;
+  }, [])
+  .orderBy(['id'], ['asc'])
   .value();
+
+// Generate ids for lookup
+const searchCategories = _.groupBy(search, item => item.type);
+const createDictionary = (result, {id, name}) => {
+  result[id] = name;
+
+  return result;
+};
+const authorIds = _.reduce(searchCategories.authors, createDictionary, {});
+const tagIds = _.reduce(searchCategories.tags, createDictionary, {});
 
 // Save everything
 const fileTypes = [
-  {fileName: 'authors.json', data: formattedAuthors},
+  {fileName: 'authorIds.json', data: authorIds},
+  {fileName: 'tagIds.json', data: tagIds},
   {fileName: 'posts.json', data: formattedPosts},
-  {fileName: 'tags.json', data: formattedTags},
-  {fileName: 'search.json', data: formattedsearch}
+  {fileName: 'search.json', data: search}
 ];
 
 _.forEach(fileTypes, ({data, fileName}) => {

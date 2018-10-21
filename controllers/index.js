@@ -1,26 +1,29 @@
 const _filter = require('lodash/filter');
-const _find = require('lodash/find');
 const _includes = require('lodash/includes');
-const _map = require('lodash/map');
 const _slice = require('lodash/slice');
 const matchSorter = require('match-sorter');
 
-const authors = require('../data/authors.json');
-const tags = require('../data/tags.json');
+const authorIds = require('../data/authorIds.json');
 const posts = require('../data/posts.json');
 const searchResults = require('../data/search.json');
+const tagIds = require('../data/tagIds.json');
 
 const filterIncludesArray = (list, key, value) =>
   _filter(list, item => _includes(item[key], value));
+
 const getPosts = ({author = '', tag = '', limit = 10, offset = 0}) => {
   let desiredPosts = posts;
 
   if (author) {
-    desiredPosts = filterIncludesArray(desiredPosts, 'authors', author);
+    const authorId = authorIds[author];
+
+    desiredPosts = filterIncludesArray(desiredPosts, 'authors', authorId);
   }
 
   if (tag) {
-    desiredPosts = filterIncludesArray(desiredPosts, 'tags', tag);
+    const tagId = tagIds[tag];
+
+    desiredPosts = filterIncludesArray(desiredPosts, 'tags', tagId);
   }
 
   const count = desiredPosts.length;
@@ -30,35 +33,11 @@ const getPosts = ({author = '', tag = '', limit = 10, offset = 0}) => {
   return {count, posts: desiredPosts};
 };
 
-const getAuthor = ({id}) => {
-  return _find(authors, ['id', id]);
-};
-
-const getTag = ({id}) => {
-  return _find(tags, ['id', id]);
-};
-
-const getAuthors = root => {
-  return _map(root.authors, authorId => {
-    return _find(authors, ['id', authorId]);
-  });
-};
-
 const getSearchResults = ({q = ''}) => {
   return _slice(matchSorter(searchResults, q, {keys: ['id', 'name']}), 0, 10);
 };
 
-const getTags = root => {
-  return _map(root.tags, tagId => {
-    return _find(tags, ['id', tagId]);
-  });
-};
-
 module.exports = {
-  getAuthor,
-  getAuthors,
   getPosts,
-  getSearchResults,
-  getTag,
-  getTags
+  getSearchResults
 };

@@ -85,13 +85,10 @@ export default class Header extends Component {
     let type = '';
 
     switch (item.type) {
-      case 'author':
+      case 'authors':
         type = 'authors';
         break;
-      case 'language':
-        type = 'languages';
-        break;
-      case 'tag':
+      case 'tags':
         type = 'tags';
         break;
       default:

@@ -1,0 +1,14 @@
+{
+  "babel": "Babel",
+  "css-in-js": "CSS in JS",
+  "ember": "Ember",
+  "graphql": "GraphQL",
+  "javascript": "Javascript",
+  "nextjs": "Nextjs",
+  "prisma": "Prisma",
+  "react": "React",
+  "react-router": "React Router",
+  "react-suspense": "React Suspense",
+  "serverside-rendering": "Serverside Rendering",
+  "styled-components": "Styled Components"
+}

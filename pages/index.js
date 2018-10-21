@@ -8,7 +8,6 @@ import {Container} from '../components/Global/styles';
 import Header from '../components/Header';
 import Meta from '../components/Meta';
 import PostList from '../components/PostList';
-import SideHeader from '../components/SideHeader';
 import SiteLinks from '../components/SiteLinks';
 import Sponsorship from '../components/Sponsorship';
 import {PAGE_AUTHOR, PAGE_TAG} from '../utils/constants';
@@ -40,54 +39,31 @@ export default class Index extends Component {
   static getQuery({pageId, pageType}) {
     const hasPageQuery = pageType && pageId;
     let pageFilter = '';
-    let pageQuery = '';
 
     if (hasPageQuery) {
       switch (pageType) {
         case PAGE_AUTHOR:
           pageFilter = `author: $pageId`;
-          pageQuery = `
-            author(id: $pageId) {
-              id
-              name
-              url
-            }
-          `;
           break;
         case PAGE_TAG:
           pageFilter = `tag: $pageId`;
-          pageQuery = `
-            tag(id: $pageId) {
-              id
-              name
-              url
-            }
-          `;
           break;
         default:
       }
     }
+
     const queryArgs = hasPageQuery ? ` $pageId: String!` : '';
     const postsArgs = hasPageQuery ? pageFilter : '';
 
     return `
       query indexQuery($offset: Int! ${queryArgs}) {
-        ${pageQuery || ''}
         posts(limit: ${listSize} offset: $offset ${postsArgs}) {
           count
           posts {
-            authors {
-              id
-              name
-            }
-            tags {
-              id
-              name
-            }
-            date_added
+            authors
             date_published
+            tags
             title
-            type
             url
           }
         }
@@ -140,12 +116,12 @@ export default class Index extends Component {
   }
 
   render() {
-    const {author, language, pageType, tag} = this.props;
+    const {author, pageType, tag} = this.props;
     const {count, loading, loadingError, offset, posts} = this.state;
 
     return (
       <>
-        <Meta />
+        <Meta author={author} pageType={pageType} tag={tag} />
         <Header />
         <Container>
           <Flex>
@@ -159,12 +135,6 @@ export default class Index extends Component {
               />
             </Box>
             <Box mx="auto" width={1 / 3} px={2}>
-              <SideHeader
-                author={author}
-                language={language}
-                pageType={pageType}
-                tag={tag}
-              />
               <Sponsorship />
               <SiteLinks />
             </Box>

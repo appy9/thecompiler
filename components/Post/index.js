@@ -6,6 +6,7 @@ import React, {Component} from 'react';
 
 import {ByLine, Div, TagLine, Title} from './styles';
 import {Spacing} from '../Global/styles';
+import {createReadableId} from '../../utils/ids';
 
 export default class Post extends Component {
   static propTypes = {};
@@ -33,9 +34,12 @@ export default class Post extends Component {
                 authors,
                 (author, key) =>
                   author ? (
-                    <Link key={key} href={`/authors/${author.id}`}>
+                    <Link
+                      key={key}
+                      href={`/authors/${createReadableId(author)}`}
+                    >
                       <a>
-                        <span>{author.name} </span>
+                        <span>{author} </span>
                       </a>
                     </Link>
                   ) : null
@@ -53,9 +57,9 @@ export default class Post extends Component {
                   tags,
                   (tag, key) =>
                     tag ? (
-                      <Link key={key} href={`/tags/${tag.id}`}>
+                      <Link key={key} href={`/tags/${createReadableId(tag)}`}>
                         <a>
-                          <span>{tag.name}</span>
+                          <span>{tag}</span>
                         </a>
                       </Link>
                     ) : null

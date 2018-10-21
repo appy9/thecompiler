@@ -19,6 +19,7 @@ export const Input = styled.input`
 
 export const Item = styled.p`
   padding: 8px;
+  cursor: pointer;
 
   ${p =>
     p.highlighted &&
