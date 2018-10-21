@@ -136,7 +136,7 @@ export default class Header extends Component {
                 )}
               </Downshift>
               <SubmitLink
-                href="https://github.com/onthecompiler/thecompiler/issues/new?template=submission.md"
+                href="https://github.com/onthecompiler/thecompiler/issues/new?template=submission.md&labels=good%20first%20issue,help%20wanted"
                 rel="noopener noreferrer"
                 target="_blank"
               >
