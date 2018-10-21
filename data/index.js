@@ -65,6 +65,40 @@ const search = _.chain(formattedPosts)
   .orderBy(['id'], ['asc'])
   .value();
 
+/**
+ * Generate trending data
+ * Trending is defined as the most recent author or tag
+ * to have 5 posts associated with it
+ */
+let trendDictionary = {authors: {}, tags: {}};
+const trending = [];
+
+_.forEach(formattedPosts, ({authors, tags}) => {
+  const checkItems = (items, itemType) => {
+    _.forEach(items, item => {
+      if (trendDictionary[itemType][item]) {
+        if (trendDictionary[itemType][item] === 4) {
+          trending.push({
+            id: createId(item),
+            name: item,
+            type: itemType
+          });
+        }
+        trendDictionary[itemType][item]++;
+      } else {
+        trendDictionary[itemType][item] = 1;
+      }
+    });
+  };
+
+  checkItems(authors, 'authors');
+  checkItems(tags, 'tags');
+
+  if (trending.length > 9) {
+    return false;
+  }
+});
+
 // Generate ids for lookup
 const searchCategories = _.groupBy(search, item => item.type);
 const createDictionary = (result, {id, name}) => {
@@ -80,7 +114,8 @@ const fileTypes = [
   {fileName: 'authorIds.json', data: authorIds},
   {fileName: 'tagIds.json', data: tagIds},
   {fileName: 'posts.json', data: formattedPosts},
-  {fileName: 'search.json', data: search}
+  {fileName: 'search.json', data: search},
+  {fileName: 'trending.json', data: trending}
 ];
 
 _.forEach(fileTypes, ({data, fileName}) => {

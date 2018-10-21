@@ -82,23 +82,11 @@ export default class Header extends Component {
   }
 
   handleSelection(item) {
-    let type = '';
-
-    switch (item.type) {
-      case 'authors':
-        type = 'authors';
-        break;
-      case 'tags':
-        type = 'tags';
-        break;
-      default:
-    }
-
-    if (!type) {
+    if (!item.type) {
       return;
     }
 
-    Router.push(`/${type}/${item.id}`);
+    Router.push(`/${item.type}/${item.id}`);
   }
 
   render() {

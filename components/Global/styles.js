@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components';
 
 export const Button = styled.button`
   padding: 5px 7px;
-  background: lightgrey;
+  background: ${p => p.theme.Blue};
   border-radius: 3px;
   border: none;
   font-weight: 500;
@@ -52,6 +52,11 @@ export const Content = styled.div`
   padding: 20px;
 `;
 
+export const SectionTitle = styled.p`
+  font-size: 24px;
+  margin-bottom: 8px;
+`;
+
 export const Spacing = styled.div`
   margin: 10px 0;
 `;
@@ -85,12 +90,9 @@ export const globalCSS = css`
 
 export const theme = {
   background: '#F4F5F7',
-  BlueHover: '#6EC6FF',
   Blue: '#2196F3',
-  GreenHover: '#59E87C',
   Green: '#00B54E',
   Grey: '#C1C2C4',
   GreyDark: '#919294',
-  RedHover: '#FF5231',
   Red: '#DC0000'
 };

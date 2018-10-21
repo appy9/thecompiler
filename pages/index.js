@@ -9,7 +9,7 @@ import Header from '../components/Header';
 import Meta from '../components/Meta';
 import PostList from '../components/PostList';
 import SiteLinks from '../components/SiteLinks';
-import Sponsorship from '../components/Sponsorship';
+import Trending from '../components/Trending';
 import {PAGE_AUTHOR, PAGE_TAG} from '../utils/constants';
 
 const {
@@ -135,7 +135,7 @@ export default class Index extends Component {
               />
             </Box>
             <Box mx="auto" width={1 / 3} px={2}>
-              <Sponsorship />
+              <Trending />
               <SiteLinks />
             </Box>
           </Flex>

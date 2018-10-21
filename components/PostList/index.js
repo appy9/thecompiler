@@ -2,7 +2,8 @@ import _map from 'lodash/map';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
-import {Card} from '../Global/styles';
+import {PostFooter} from './styles';
+import {Button, Card} from '../Global/styles';
 import Post from '../Post';
 
 const minimumBottomDistance = 150;
@@ -55,25 +56,27 @@ export default class PostList extends Component {
     const noItems = items.length === 0;
 
     return (
-      <Card>
-        {noItems ? (
-          <h2>No items found</h2>
-        ) : (
-          <>
-            {_map(items, (item, index) => (
-              <Post key={index} {...item} />
-            ))}
-            {loading ? (
-              <p>loading more posts</p>
-            ) : showLoadMore ? (
-              <>
-                {loadingError && <p>error</p>}
-                <p onClick={handlePaginate}>load more button</p>
-              </>
-            ) : null}
-          </>
-        )}
-      </Card>
+      <>
+        <Card>
+          {noItems ? (
+            <p>No items were found.</p>
+          ) : (
+            _map(items, (item, index) => <Post key={index} {...item} />)
+          )}
+        </Card>
+        <PostFooter>
+          {loading ? (
+            <p>Loading more posts...</p>
+          ) : showLoadMore ? (
+            <>
+              {loadingError && <p>error</p>}
+              <Button onClick={handlePaginate}>
+                <p>Load more</p>
+              </Button>
+            </>
+          ) : null}
+        </PostFooter>
+      </>
     );
   }
 }
