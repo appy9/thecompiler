@@ -7,7 +7,7 @@ That being said, this codebase isn't your typical open source project because it
 - [Ground Rules](#ground-rules)
 - [Adding Data](#adding-data)
 - [Codebase](#codebase)
-- [First time setup](#first-time-setup)
+- [Setup](#setup)
 - [Roadmap](https://github.com/onthecompiler/thecompiler/projects/2)
 
 ### Ground Rules
@@ -30,7 +30,45 @@ Want to fix a bug or implement an agreed-upon feature? Great, jump to the [local
 
 ### Adding Data
 
-TODO
+To add data simply add your post to the [data/post.json](/data/posts.json) file. On commit the data will be formatted and placed in the correct spots in the app so you don't have to worry about that. The data format is as follows:
+
+```
+{
+  "authors": ["Name Of", "Each Author"],
+  "date_published": "2018-01-01T00:00:00",
+  "tags": ["Lists", "Programming"],
+  "title": "A really cool website!",
+  "url": "https://thecompiler.site"
+}
+```
+
+`authors([String])`
+
+A list of all the authors associated with your post.
+
+`date_published(Date)`
+
+Date publish in ISO8601 format. Default the time of day to midnight if is available.
+
+`tags([String])`
+
+A list of readable tag names for the post. Please be mindful of spamming tags and use discretion when adding them.
+
+`title(String)`
+
+The title of the post.
+
+`url(String)`
+
+The url of the post.
+
+#### Regenerating the data
+
+When you first download the code the data is set to whatever was added in the last commit. To regenerate the data for development run the following command:
+
+```sh
+npm run data
+```
 
 ### Codebase
 
@@ -50,14 +88,22 @@ Here is a list of all the big technologies we use:
 
 ```sh
 thecompiler/
-└── TODO
+├── components   # React components
+├── controllers  # API Controllers
+├── data         # The underlying data and file for the data process
+├── graphql      # GraphQL Files for the schema and resolvers
+├── pages        # Next.js pages
+├── static       # Public files used on the frontend
+├── stories      # Storybook stories
+├── utils        # Grab bag utilities folder
+└── server.js    # Main server file
 ```
 
 #### Code Styles
 
 On commit we run Prettier and kick off the process for massaging the data for the app. This means you can write code in whatever style you want and it will be automatically formatted according to the common style when you run `git commit`.
 
-### First time setup
+### Setup
 
 The first step to running the compiler locally is downloading the code by cloning the repository:
 
@@ -79,18 +125,6 @@ Start the mono-server
 npm run dev
 ```
 
-#### Regenerating the data
-
-When you first download the code the data is set to whatever was added in the last commit. To regenerate the data run the following command:
-
-```sh
-npm run data
-```
-
 ## License
 
 BSD 3-Clause, see the [LICENSE](./LICENSE) file.
-
-```
-
-```
