@@ -2,8 +2,6 @@
 
 **We heartily welcome any and all contributions that match [our product roadmap](https://github.com/onthecompiler/thecompiler/projects/2) and engineering standards!**
 
-That being said, this codebase isn't your typical open source project because it's not a library or package with a limited scope—it's the entire product.
-
 - [Ground Rules](#ground-rules)
 - [Adding Data](#adding-data)
 - [Codebase](#codebase)
@@ -26,11 +24,11 @@ If you find a bug on the compiler and open a PR that fixes it we'll review it as
 
 If you want to contribute but are unsure to start, we have [a "good first issue" label](https://github.com/onthecompiler/thecompiler/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) which is applied to newcomer-friendly issues. Take a look at [the full list of good first issues](https://github.com/onthecompiler/thecompiler/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) and pick something you like!
 
-Want to fix a bug or implement an agreed-upon feature? Great, jump to the [local setup instructions](#first-time-setup)!
+Want to fix a bug or implement an agreed-upon feature? Great, jump to the [setup instructions](#setup)!
 
 ### Adding Data
 
-To add data simply add your post to the [data/post.json](/data/posts.json) file. On commit the data will be formatted and placed in the correct spots in the app so you don't have to worry about that. The data format is as follows:
+To add data simply add your post to the [data/post.json](./data/posts.json) file. On commit the data will be formatted and placed in the correct spots in the app so you don't have to worry about that. The data format is as follows:
 
 ```
 {
@@ -48,7 +46,7 @@ A list of all the authors associated with your post.
 
 `date_published(Date)`
 
-Date publish in ISO8601 format. Default the time of day to midnight if is available.
+Date the post was published in ISO8601 format. Default the time of day to midnight if is available.
 
 `tags([String])`
 
@@ -74,13 +72,13 @@ npm run data
 
 #### Technologies
 
-With the ground rules out of the way, let's talk about the coarse architecture of this mono repo:
+Let's talk about the architecture of this repo:
 
-- **Full-stack JavaScript**: We run a mono-server the serves both GraphQL and Next.js.
+- **Full-stack JavaScript**: We run a monoserver the serves both our api and frontend.
 
 Here is a list of all the big technologies we use:
 
-- **GraphQL**: vanilla API setup
+- **GraphQL**: vanilla API express-graphql setup
 - **Next.js**: Serverside Rendered React apps
 - **React**: Frontend
 
@@ -105,8 +103,6 @@ On commit we run Prettier and kick off the process for massaging the data for th
 
 ### Setup
 
-The first step to running the compiler locally is downloading the code by cloning the repository:
-
 Clone the app
 
 ```sh
@@ -119,7 +115,7 @@ Install dependencies
 npm install
 ```
 
-Start the mono-server
+Start the monoserver
 
 ```sh
 npm run dev
