@@ -1,7 +1,7 @@
 [
   {"id": "javascript", "name": "Javascript", "type": "tags"},
-  {"id": "tyler-mcginnis", "name": "Tyler McGinnis", "type": "authors"},
   {"id": "react", "name": "React", "type": "tags"},
+  {"id": "tyler-mcginnis", "name": "Tyler McGinnis", "type": "authors"},
   {"id": "react-router", "name": "React Router", "type": "tags"},
   {"id": "graphql", "name": "GraphQL", "type": "tags"}
 ]

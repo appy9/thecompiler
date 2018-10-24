@@ -4,6 +4,7 @@ COPY package.json package-lock.json /usr/src/
 RUN npm ci
 COPY . .
 RUN npm run build && \
+    npm run data && \
     npm prune --production
 
 FROM mhart/alpine-node:base-10

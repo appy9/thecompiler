@@ -2,6 +2,7 @@
   {"id": "andrew-clark", "name": "Andrew Clark", "type": "authors"},
   {"id": "babel", "name": "Babel", "type": "tags"},
   {"id": "carolyn-stransky", "name": "Carolyn Stransky", "type": "authors"},
+  {"id": "charles-stover", "name": "Charles Stover", "type": "authors"},
   {"id": "css-in-js", "name": "CSS in JS", "type": "tags"},
   {"id": "ember", "name": "Ember", "type": "tags"},
   {
@@ -18,6 +19,7 @@
   {"id": "kylie-stewart", "name": "Kylie Stewart", "type": "authors"},
   {"id": "max-stoiber", "name": "Max Stoiber", "type": "authors"},
   {"id": "nextjs", "name": "Nextjs", "type": "tags"},
+  {"id": "performance", "name": "Performance", "type": "tags"},
   {"id": "pranay-prakash", "name": "Pranay Prakash", "type": "authors"},
   {"id": "prisma", "name": "Prisma", "type": "authors"},
   {"id": "prisma", "name": "Prisma", "type": "tags"},
