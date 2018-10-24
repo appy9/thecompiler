@@ -4,7 +4,7 @@ const log = require('npmlog');
 const path = require('path');
 
 const posts = require('./posts.json');
-const {createId} = require('../utils/ids');
+const {createDashDelimitedId} = require('../utils/ids');
 
 /**
  * Order the keys in an object
@@ -49,7 +49,7 @@ const search = _.chain(formattedPosts)
       .uniq()
       .reduce((result, authorOrTag) => {
         result.push({
-          id: createId(authorOrTag),
+          id: createDashDelimitedId(authorOrTag),
           name: authorOrTag,
           type: index
         });
@@ -79,7 +79,7 @@ _.forEach(formattedPosts, ({authors, tags}) => {
       if (trendDictionary[itemType][item]) {
         if (trendDictionary[itemType][item] === 4) {
           trending.push({
-            id: createId(item),
+            id: createDashDelimitedId(item),
             name: item,
             type: itemType
           });

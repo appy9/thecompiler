@@ -131,10 +131,6 @@ export default class Index extends Component {
     const {author, pageType, tag} = this.props;
     const {count, loading, loadingError, offset, posts} = this.state;
 
-    console.log(this.props);
-
-    console.log(author, pageType, tag);
-
     return (
       <>
         <Meta author={author} pageType={pageType} tag={tag} />

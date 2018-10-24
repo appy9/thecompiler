@@ -21,7 +21,7 @@ const Meta = props => {
   return (
     <Head>
       <title>{title}</title>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta name="A community maintained list of every programming resource available. From articles to videos and podcasts this is an opensource and robust list of content." />
     </Head>
   );

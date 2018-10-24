@@ -1,18 +1,11 @@
 const _memoize = require('lodash/memoize');
 
-const createId = item =>
-  item
-    .split(' ')
-    .join('-')
-    .toLowerCase();
-
-const createReadableId = item =>
+const createDashDelimitedId = item =>
   item
     .split(' ')
     .join('-')
     .toLowerCase();
 
 module.exports = {
-  createId: _memoize(createId),
-  createReadableId: _memoize(createReadableId)
+  createDashDelimitedId: _memoize(createDashDelimitedId)
 };
