@@ -6,18 +6,23 @@ import {PAGE_AUTHOR, PAGE_TAG} from '../../utils/constants';
 
 const Meta = props => {
   const {author, pageType, tag} = props;
+  let title = 'the compiler';
 
   switch (pageType) {
     case PAGE_AUTHOR:
+      title = `${author.name} | ${title}`;
       break;
     case PAGE_TAG:
+      title = `${tag.name} | ${title}`;
       break;
     default:
   }
 
   return (
     <Head>
-      <title>thecompiler</title>
+      <title>{title}</title>
+      <meta charset="UTF-8" />
+      <meta name="A community maintained list of every programming resource available. From articles to videos and podcasts this is an opensource and robust list of content." />
     </Head>
   );
 };

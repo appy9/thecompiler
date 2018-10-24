@@ -39,14 +39,25 @@ export default class Index extends Component {
   static getQuery({pageId, pageType}) {
     const hasPageQuery = pageType && pageId;
     let pageFilter = '';
+    let pageInfo = '';
 
     if (hasPageQuery) {
       switch (pageType) {
         case PAGE_AUTHOR:
           pageFilter = `author: $pageId`;
+          pageInfo = `
+            author(id: "${pageId}")  {
+              name
+            }
+          `;
           break;
         case PAGE_TAG:
           pageFilter = `tag: $pageId`;
+          pageInfo = `
+            tag(id: "${pageId}")  {
+              name
+            }
+          `;
           break;
         default:
       }
@@ -57,6 +68,7 @@ export default class Index extends Component {
 
     return `
       query indexQuery($offset: Int! ${queryArgs}) {
+        ${pageInfo}
         posts(limit: ${listSize} offset: $offset ${postsArgs}) {
           count
           posts {
@@ -118,6 +130,10 @@ export default class Index extends Component {
   render() {
     const {author, pageType, tag} = this.props;
     const {count, loading, loadingError, offset, posts} = this.state;
+
+    console.log(this.props);
+
+    console.log(author, pageType, tag);
 
     return (
       <>

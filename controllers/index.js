@@ -11,6 +11,26 @@ const tagIds = require('../data/tagIds.json');
 const filterIncludesArray = (list, key, value) =>
   _filter(list, item => _includes(item[key], value));
 
+const getAuthor = ({id}) => {
+  const name = authorIds[id];
+
+  if (!name) {
+    return null;
+  }
+
+  return {id, name};
+};
+
+const getTag = ({id}) => {
+  const name = tagIds[id];
+
+  if (!name) {
+    return null;
+  }
+
+  return {id, name};
+};
+
 const getPosts = ({author = '', tag = '', limit = 10, offset = 0}) => {
   let desiredPosts = posts;
 
@@ -38,6 +58,8 @@ const getSearchResults = ({q = ''}) => {
 };
 
 module.exports = {
+  getAuthor,
   getPosts,
-  getSearchResults
+  getSearchResults,
+  getTag
 };
