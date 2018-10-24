@@ -1,5 +1,12 @@
 [
   {
+    "authors": ["Adam Conrad"],
+    "date_published": "2018-10-22T00:00:00",
+    "tags": ["Javascript", "React", "GraphQL"],
+    "title": "React and GraphQL at the NYTimes",
+    "url": "https://softwareengineeringdaily.com/2018/10/22/react-and-graphql-at-the-nytimes"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2018-10-04T00:00:00",
     "tags": ["Javascript"],
