@@ -1,8 +1,12 @@
 {
   "babel": "Babel",
+  "backbone": "Backbone",
   "css-in-js": "CSS in JS",
+  "docker": "Docker",
+  "elm": "Elm",
   "ember": "Ember",
   "graphql": "GraphQL",
+  "immutability": "Immutability",
   "javascript": "Javascript",
   "nextjs": "Nextjs",
   "performance": "Performance",
@@ -10,6 +14,8 @@
   "react": "React",
   "react-router": "React Router",
   "react-suspense": "React Suspense",
+  "redux": "Redux",
   "serverside-rendering": "Serverside Rendering",
-  "styled-components": "Styled Components"
+  "styled-components": "Styled Components",
+  "testing": "Testing"
 }

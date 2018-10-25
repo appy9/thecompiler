@@ -1,5 +1,19 @@
 [
   {
+    "authors": ["Kent C Dodds"],
+    "date_published": "2018-10-24T00:00:00",
+    "tags": ["Javascript", "Testing"],
+    "title": "Demystifying JavaScript Testing",
+    "url": "https://css-tricks.com/demystifying-javascript-testing"
+  },
+  {
+    "authors": ["Sebastian Markbåge"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React v16.6.0: lazy, memo and contextType",
+    "url": "https://reactjs.org/blog/2018/10/23/react-v-16-6.html"
+  },
+  {
     "authors": ["Adam Conrad"],
     "date_published": "2018-10-22T00:00:00",
     "tags": ["Javascript", "React", "GraphQL"],
@@ -21,6 +35,13 @@
     "url": "https://medium.com/@Charles_Stover/cache-your-react-event-listeners-to-improve-performance-14f635a62e15"
   },
   {
+    "authors": ["Mark Erikson"],
+    "date_published": "2018-09-01T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "The State of Redux",
+    "url": "https://blog.isquaredsoftware.com/presentations/2018-09-state-of-redux"
+  },
+  {
     "authors": ["Eugene Gluhotorenko"],
     "date_published": "2018-08-13T00:00:00",
     "tags": ["Javascript", "CSS in JS", "Styled Components"],
@@ -40,6 +61,20 @@
     "tags": ["Javascript", "React"],
     "title": "Building ChatBots with React & AWS",
     "url": "https://tylermcginnis.com/building-chatbots-with-react-aws"
+  },
+  {
+    "authors": ["Sara Vieira"],
+    "date_published": "2018-07-06T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React is just JavaScript",
+    "url": "https://medium.com/yld-engineering-blog/react-is-just-javascript-88600553269c"
+  },
+  {
+    "authors": ["Tom Gallacher"],
+    "date_published": "2018-06-25T00:00:00",
+    "tags": ["Docker"],
+    "title": "When should I use Docker?",
+    "url": "https://medium.com/yld-engineering-blog/when-should-i-use-docker-77ae2736a487"
   },
   {
     "authors": ["Tyler McGinnis"],
@@ -229,6 +264,20 @@
     "url": "https://tylermcginnis.com/react-router-philosophy-introduction"
   },
   {
+    "authors": ["Mark Erikson"],
+    "date_published": "2018-01-01T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 11: Nested Data and Trees",
+    "url": "https://blog.isquaredsoftware.com/2018/01/practical-redux-part-11-nested-data-trees/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-12-22T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Idiomatic Redux: Using Reselect Selectors for Encapsulation and Performance",
+    "url": "https://blog.isquaredsoftware.com/2017/12/idiomatic-redux-using-reselect-selectors/"
+  },
+  {
     "authors": ["Prisma"],
     "date_published": "2017-12-12T00:00:00",
     "tags": ["Javascript", "GraphQL", "Prisma"],
@@ -257,10 +306,234 @@
     "url": "https://tylermcginnis.com/arrow-functions"
   },
   {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-07-25T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 10: Managing Modals and Context Menus",
+    "url": "https://blog.isquaredsoftware.com/2017/07/practical-redux-part-10-managing-modals/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-07-11T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 9: Upgrading Redux-ORM and Updating Dependencies",
+    "url": "https://blog.isquaredsoftware.com/2017/07/practical-redux-part-9-managing-dependencies/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-07-04T00:00:00",
+    "tags": ["Javascript", "React", "Redux", "Backbone"],
+    "title": "Integrating React and Redux Into an Existing Backbone App",
+    "url": "https://blog.isquaredsoftware.com/2017/07/react-redux-backbone-integration/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-05-10T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Idiomatic Redux: The Tao of Redux, Part 2 - Practice and Philosophy",
+    "url": "https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-2/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-05-09T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent",
+    "url": "https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-03-07T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Declaratively Rendering Earth in 3D, Part 1: Building a Cesium + React App with Webpack",
+    "url": "https://blog.isquaredsoftware.com/2017/03/declarative-earth-part-1-cesium-webpack/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-03-07T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Declaratively Rendering Earth in 3D, Part 2: Controlling Cesium with React",
+    "url": "https://blog.isquaredsoftware.com/2017/03/declarative-earth-part-2-cesium-react/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-01-26T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 8: Form Draft Data Management",
+    "url": "https://blog.isquaredsoftware.com/2017/01/practical-redux-part-8-form-draft-data-management/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-01-12T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 7: Form Change Handling, Data Editing, and Feature Reducers",
+    "url": "https://blog.isquaredsoftware.com/2017/01/practical-redux-part-7-forms-editing-reducers/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-01-10T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 6: Connected Lists, Forms, and Performance",
+    "url": "https://blog.isquaredsoftware.com/2017/01/practical-redux-part-6-connected-lists-forms-and-performance/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2017-01-02T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Idiomatic Redux: Thoughts on Thunks, Sagas, Abstraction, and Reusability",
+    "url": "https://blog.isquaredsoftware.com/2017/01/idiomatic-redux-thoughts-on-thunks-sagas-abstraction-and-reusability/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2016-12-12T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 5: Loading and Displaying Data",
+    "url": "https://blog.isquaredsoftware.com/2016/12/practical-redux-part-5-loading-and-displaying-data/"
+  },
+  {
     "authors": ["Max Stoiber"],
     "date_published": "2016-11-30T00:00:00",
     "tags": ["Javascript", "Styled Components"],
     "title": "The magic behind 💅 styled-components",
     "url": "https://mxstbr.blog/2016/11/styled-components-magic-explained"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2016-11-22T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 4: UI Layout and Project Structure",
+    "url": "https://blog.isquaredsoftware.com/2016/11/practical-redux-part-4-ui-layout-and-project-structure/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2016-11-10T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 3: Project Planning and Setup",
+    "url": "https://blog.isquaredsoftware.com/2016/11/practical-redux-part-3-project-planning-and-setup/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2016-10-31T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 1: Redux-ORM Basics",
+    "url": "https://blog.isquaredsoftware.com/2016/10/practical-redux-part-1-redux-orm-basics/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2016-10-31T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Practical Redux, Part 2: Redux-ORM Concepts and Techniques",
+    "url": "https://blog.isquaredsoftware.com/2016/10/practical-redux-part-2-redux-orm-concepts-and-techniques/"
+  },
+  {
+    "authors": ["Mark Erikson"],
+    "date_published": "2016-10-09T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Idiomatic Redux: Why use action creators?",
+    "url": "https://blog.isquaredsoftware.com/2016/10/idiomatic-redux-why-use-action-creators/"
+  },
+  {
+    "authors": ["James Baxley III"],
+    "date_published": "2016-08-16T00:00:00",
+    "tags": ["Javascript", "React", "GraphQL"],
+    "title": "Seamless integration for GraphQL and React",
+    "url": "https://blog.apollographql.com/seamless-integration-for-graphql-and-react-6ffc0ad3fead"
+  },
+  {
+    "authors": ["Merrick Christensen"],
+    "date_published": "2016-07-30T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Function as Child Components",
+    "url": "https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9"
+  },
+  {
+    "authors": ["Jeff Hsu"],
+    "date_published": "2016-07-14T00:00:00",
+    "tags": ["Javascript", "React", "Redux", "Immutability"],
+    "title": "Redux, Immutability, and Higher Order Components",
+    "url": "http://blog.traintracks.io/redux-immutability-and-higher-order-components/"
+  },
+  {
+    "authors": ["Dave Ceddia"],
+    "date_published": "2016-07-06T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Don't Use Bind When Passing Props",
+    "url": "https://daveceddia.com/avoid-bind-when-passing-props/"
+  },
+  {
+    "authors": ["Andrew Clark"],
+    "date_published": "2016-06-06T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Recomposing your React application at react-europe 2016",
+    "url": "https://www.youtube.com/watch?v=zD_judE-bXk"
+  },
+  {
+    "authors": ["Tyler Shaddix"],
+    "date_published": "2016-03-16T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "Building Chrome Extensions in React+Redux",
+    "url": "https://blog.goguardian.com/nerds/chrome-extensions-in-react"
+  },
+  {
+    "authors": ["Saif Hakim"],
+    "date_published": "2016-02-24T00:00:00",
+    "tags": ["Javascript", "React", "Performance"],
+    "title": "A Deep Dive into React Perf Debugging",
+    "url": "https://benchling.engineering/a-deep-dive-into-react-perf-debugging-fd2063f5a667"
+  },
+  {
+    "authors": ["Andrew Farmer"],
+    "date_published": "2016-02-04T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React AJAX Best Practices",
+    "url": "https://www.javascriptstuff.com/react-ajax-best-practices/"
+  },
+  {
+    "authors": ["Saif Hakim"],
+    "date_published": "2016-02-04T00:00:00",
+    "tags": ["Javascript", "React", "Performance"],
+    "title": "Performance Engineering with React",
+    "url": "https://benchling.engineering/performance-engineering-with-react-e03013e53285"
+  },
+  {
+    "authors": ["Stefan Oestreicher"],
+    "date_published": "2016-01-28T00:00:00",
+    "tags": ["Javascript", "Elm", "React"],
+    "title": "Elm Architecture for React",
+    "url": "https://medium.com/javascript-inside/elm-architecture-for-react-951b383fcd65"
+  },
+  {
+    "authors": ["franleplant"],
+    "date_published": "2016-01-13T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React Higher Order Components in depth",
+    "url": "https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e"
+  },
+  {
+    "authors": ["François Zaninotto"],
+    "date_published": "2015-12-17T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "A Better File Structure For React/Redux Applications",
+    "url": "https://marmelab.com/blog/2015/12/17/react-directory-structure.html"
+  },
+  {
+    "authors": ["James K Nelson"],
+    "date_published": "2015-09-14T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Learn Raw React — no JSX, no Flux, no ES6, no Webpack",
+    "url": "http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack"
+  },
+  {
+    "authors": ["Tero Parviainen"],
+    "date_published": "2015-09-10T00:00:00",
+    "tags": ["Javascript", "React", "Redux", "Immutability"],
+    "title": "A Comprehensive Guide to Test-First Development with Redux, React, and Immutable",
+    "url": "http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html"
+  },
+  {
+    "authors": ["Spike Brehm"],
+    "date_published": "2013-11-11T00:00:00",
+    "tags": ["Serverside Rendering"],
+    "title": "Isomorphic JavaScript: The Future of Web Apps",
+    "url": "https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc"
   }
 ]
