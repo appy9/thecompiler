@@ -116,7 +116,11 @@ export default class Header extends Component {
                   selectedItem
                 }) => (
                   <div style={{display: 'inline-block'}}>
-                    <Input {...getInputProps()} />
+                    <Input
+                      {...getInputProps({
+                        placeholder: 'Search tags, titles, authors...'
+                      })}
+                    />
 
                     {isOpen &&
                       hasItems && (
