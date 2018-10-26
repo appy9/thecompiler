@@ -7,6 +7,111 @@
     "url": "https://css-tricks.com/demystifying-javascript-testing"
   },
   {
+    "authors": ["Helen Zhukova"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "(Un)expected use of GraphQL",
+    "url": "https://www.youtube.com/watch?v=9KG8mqo1iE0"
+  },
+  {
+    "authors": ["Glenn Reyes"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Building tools for GraphQL",
+    "url": "https://www.youtube.com/watch?v=BeQ5CjzCaUg"
+  },
+  {
+    "authors": ["Ivan Goncharov"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Hidden gems of GraphQL query",
+    "url": "https://www.youtube.com/watch?v=AeEFjFHehnM"
+  },
+  {
+    "authors": ["Andrew Rhyne"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Real-time GraphQL with Event Sourcing",
+    "url": "https://www.youtube.com/watch?v=wiEUApv9-Qc"
+  },
+  {
+    "authors": ["Kadi Kraman"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Going offline first with GraphQL",
+    "url": "https://www.youtube.com/watch?v=i4Cfq7hQiws"
+  },
+  {
+    "authors": ["Eloy Durán"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Where art thou, my error?",
+    "url": "https://www.youtube.com/watch?v=qKA-n8p-sNc"
+  },
+  {
+    "authors": ["Tanmai Gopal"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["Haskell", "GraphQL"],
+    "title": "Writing a realtime GraphQL backend as a compiler in Haskell",
+    "url": "https://www.youtube.com/watch?v=bQLwmYFdCFQ"
+  },
+  {
+    "authors": ["Nik Graf"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["Reason", "GraphQL"],
+    "title": "Reason and GraphQL",
+    "url": "https://www.youtube.com/watch?v=tUIvl2pe8CQ"
+  },
+  {
+    "authors": ["Jimmy Jia"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Building efficient, waterfall-free GraphQL applications",
+    "url": "https://www.youtube.com/watch?v=sgWQX0dzJFI"
+  },
+  {
+    "authors": ["Adam Miskiewicz"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Adopting GraphQL in Large Codebases",
+    "url": "https://www.youtube.com/watch?v=8KLwLzRlETc"
+  },
+  {
+    "authors": ["Ellie Day"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Emerging uses of GraphQL for rapid application development",
+    "url": "https://www.youtube.com/watch?v=fdJ0-0TiCQs"
+  },
+  {
+    "authors": ["Dan Schafer"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "The Prehistory of GraphQL",
+    "url": "https://www.youtube.com/watch?v=6NYC-k2Abow"
+  },
+  {
+    "authors": ["Benjie Gilliam"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Database-first GraphQL Development",
+    "url": "https://www.youtube.com/watch?v=XDOrhTXd4pE"
+  },
+  {
+    "authors": ["Johannes Schickling"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "End-to-end type-safety with GraphQL",
+    "url": "https://www.youtube.com/watch?v=5JuSXwFSJn4"
+  },
+  {
+    "authors": ["Carolyn Stransky"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Life is hard and so is learning GraphQL",
+    "url": "https://www.youtube.com/watch?v=FsRSdGuj588"
+  },
+  {
     "authors": ["Sebastian Markbåge"],
     "date_published": "2018-10-23T00:00:00",
     "tags": ["Javascript", "React"],
@@ -14,11 +119,32 @@
     "url": "https://reactjs.org/blog/2018/10/23/react-v-16-6.html"
   },
   {
+    "authors": ["João Pedro Henrique"],
+    "date_published": "2018-10-22T00:00:00",
+    "tags": ["REST"],
+    "title": "Using inheritance to increase your REST API scalability",
+    "url": "https://codeburst.io/using-inheritance-to-increase-your-rest-api-scalability-bb696c936769"
+  },
+  {
     "authors": ["Adam Conrad"],
     "date_published": "2018-10-22T00:00:00",
     "tags": ["Javascript", "React", "GraphQL"],
     "title": "React and GraphQL at the NYTimes",
     "url": "https://softwareengineeringdaily.com/2018/10/22/react-and-graphql-at-the-nytimes"
+  },
+  {
+    "authors": ["Shawn Swyx Wang"],
+    "date_published": "2018-10-18T00:00:00",
+    "tags": ["React", "React Suspense", "Netlify"],
+    "title": "React Suspense with Netlify Functions",
+    "url": "https://www.netlify.com/blog/2018/10/18/react-suspense-with-netlify-functions/"
+  },
+  {
+    "authors": ["Ryan Florence"],
+    "date_published": "2018-10-05T00:00:00",
+    "tags": ["React", "React Suspense", "Redux"],
+    "title": "The Suspense is Killing Redux",
+    "url": "https://medium.com/@ryanflorence/the-suspense-is-killing-redux-e888f9692430"
   },
   {
     "authors": ["Tyler McGinnis"],
@@ -33,6 +159,27 @@
     "tags": ["Javascript", "React", "Redux", "SPA"],
     "title": "Long-term React & Redux SPA — Lessons learned",
     "url": "https://notes.devlabs.bg/long-term-react-redux-spa-lessons-learned-14daca3a26ba"
+  },
+  {
+    "authors": ["Etienne Lemay"],
+    "date_published": "2018-09-28T00:00:00",
+    "tags": ["Electron"],
+    "title": "Make your Electron app Dark Mode compatible",
+    "url": "https://medium.com/missive-app/make-your-electron-app-dark-mode-compatible-c23dcfdd0dfa"
+  },
+  {
+    "authors": ["Laurie Voss"],
+    "date_published": "2018-09-27T00:00:00",
+    "tags": ["npm"],
+    "title": "Things you didn't know about npm",
+    "url": "https://www.youtube.com/watch?v=2vKFUfQkbOs"
+  },
+  {
+    "authors": ["Scott Walkinshaw"],
+    "date_published": "2018-09-24T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Shopify GraphQL Design Tutorial",
+    "url": "https://github.com/Shopify/graphql-design-tutorial"
   },
   {
     "authors": ["John Bacon", "Brian Liang", "Peter Turner"],
@@ -54,6 +201,13 @@
     "tags": ["Javascript", "React", "Performance"],
     "title": "Cache your React event listeners to improve performance",
     "url": "https://medium.com/@Charles_Stover/cache-your-react-event-listeners-to-improve-performance-14f635a62e15"
+  },
+  {
+    "authors": ["Justin Falcone"],
+    "date_published": "2018-09-04T00:00:00",
+    "tags": ["Javascript"],
+    "title": "One Hundred Years of JavaScript",
+    "url": "https://www.youtube.com/watch?v=J7Cotg0DRsg"
   },
   {
     "authors": ["Arwa Lokhandwala"],
@@ -96,6 +250,55 @@
     "tags": ["Javascript", "React", "Performance"],
     "title": "Using the React DevTools Profiler to Diagnose React App Performance Issues",
     "url": "https://www.netlify.com/blog/2018/08/29/using-the-react-devtools-profiler-to-diagnose-react-app-performance-issues/"
+  },
+  {
+    "authors": ["Henry Zhu"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": ["Open Source"],
+    "title": "Through the Open Source Looking Glass",
+    "url": "https://www.youtube.com/watch?v=h0sfFX7WH1c"
+  },
+  {
+    "authors": ["Sunil Pai"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": [],
+    "title": "The “Something” Statements",
+    "url": "https://www.youtube.com/watch?v=pvi0yUwSBec"
+  },
+  {
+    "authors": ["Jennifer Wong"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Translating React",
+    "url": "https://www.youtube.com/watch?v=r33EWrP5EL4"
+  },
+  {
+    "authors": ["Ryan Moore"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "The Life Cycle Methods And The Wolf - A Musicological Romp",
+    "url": "https://www.youtube.com/watch?v=o4XxQl-1JJU"
+  },
+  {
+    "authors": ["Kent C Dodds"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Simply React",
+    "url": "https://www.youtube.com/watch?v=AiJ8tRRH0f8"
+  },
+  {
+    "authors": ["Sophia Shoemaker"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React Off the Grid",
+    "url": "https://www.youtube.com/watch?v=UHNfv6k_1OQ"
+  },
+  {
+    "authors": ["Ryan Florence"],
+    "date_published": "2018-08-22T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Route Recalculating",
+    "url": "https://www.youtube.com/watch?v=X-kA8B2QzjY"
   },
   {
     "authors": ["Eugene Gluhotorenko"],
@@ -149,6 +352,13 @@
     "tags": ["Javascript", "React"],
     "title": "React is just JavaScript",
     "url": "https://medium.com/yld-engineering-blog/react-is-just-javascript-88600553269c"
+  },
+  {
+    "authors": ["Dennis Gaebel"],
+    "date_published": "2018-06-27T00:00:00",
+    "tags": ["CSS"],
+    "title": "The noob’s guide to CSS Grid",
+    "url": "https://blog.logrocket.com/the-simpletons-guide-to-css-grid-1767565b3cf7"
   },
   {
     "authors": ["Kristofer Selbekk"],
@@ -235,6 +445,13 @@
     "url": "https://medium.freecodecamp.org/effective-use-of-typescript-with-react-3a1389b6072a"
   },
   {
+    "authors": ["Adam Neary"],
+    "date_published": "2018-05-29T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Reconciling GraphQL and Thrift at Airbnb",
+    "url": "https://medium.com/airbnb-engineering/reconciling-graphql-and-thrift-at-airbnb-a97e8d290712"
+  },
+  {
     "authors": ["Andrew Clark"],
     "date_published": "2018-05-28T00:00:00",
     "tags": ["Javascript", "React Suspense"],
@@ -283,6 +500,20 @@
     "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
   },
   {
+    "authors": ["Liang Guo"],
+    "date_published": "2018-05-15T00:00:00",
+    "tags": ["Microservices"],
+    "title": "Building Services at Airbnb, Part 2",
+    "url": "https://medium.com/airbnb-engineering/building-services-at-airbnb-part-2-142be1c5d506"
+  },
+  {
+    "authors": ["Alan Johnson"],
+    "date_published": "2018-05-08T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Is GraphQL The Future?",
+    "url": "http://artsy.github.io/blog/2018/05/08/is-graphql-the-future/"
+  },
+  {
     "authors": ["Kent C. Dodds"],
     "date_published": "2018-05-07T00:00:00",
     "tags": ["Javascript", "React"],
@@ -295,6 +526,13 @@
     "tags": ["Javascript", "React", "React Router"],
     "title": "Route Config with React Router v4",
     "url": "https://tylermcginnis.com/react-router-route-config"
+  },
+  {
+    "authors": ["David Khourshid"],
+    "date_published": "2018-04-05T00:00:00",
+    "tags": ["State Machine"],
+    "title": "Simplifying Complex UIs with Finite Automata & Statecharts",
+    "url": "https://www.youtube.com/watch?v=RqTxtOXcv8Y"
   },
   {
     "authors": ["Tyler McGinnis"],
@@ -471,6 +709,20 @@
     "url": "https://blog.isquaredsoftware.com/2017/12/idiomatic-redux-using-reselect-selectors/"
   },
   {
+    "authors": ["Alan B Smith"],
+    "date_published": "2017-12-20T00:00:00",
+    "tags": ["Javascript", "Styled Components", "Jest"],
+    "title": "Effective testing of styled-components with Jest Snapshots",
+    "url": "https://medium.com/styled-components/effective-testing-for-styled-components-67982eb7d42b"
+  },
+  {
+    "authors": ["Liang Guo"],
+    "date_published": "2017-12-12T00:00:00",
+    "tags": ["Microservices"],
+    "title": "Building Services at Airbnb, Part 1",
+    "url": "https://medium.com/airbnb-engineering/building-services-at-airbnb-part-1-c4c1d8fa811b"
+  },
+  {
     "authors": ["Prisma"],
     "date_published": "2017-12-12T00:00:00",
     "tags": ["Javascript", "GraphQL", "Prisma"],
@@ -513,6 +765,13 @@
     "url": "https://tylermcginnis.com/arrow-functions"
   },
   {
+    "authors": ["Ryan Florence"],
+    "date_published": "2017-10-06T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React, Inline Functions, and Performance",
+    "url": "https://cdb.reacttraining.com/react-inline-functions-and-performance-bdff784f5578"
+  },
+  {
     "authors": ["Ryan Crockett"],
     "date_published": "2017-10-04T00:00:00",
     "tags": ["Javascript", "React"],
@@ -534,11 +793,60 @@
     "url": "https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce"
   },
   {
+    "authors": ["Harsh Makadia"],
+    "date_published": "2017-09-13T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Why React16 is a blessing to React developers",
+    "url": "https://medium.freecodecamp.org/why-react16-is-a-blessing-to-react-developers-31433bfc210a"
+  },
+  {
+    "authors": ["Jack R. Scott"],
+    "date_published": "2017-09-03T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "Goodbye Redux",
+    "url": "https://hackernoon.com/goodbye-redux-26e6a27b3a0b"
+  },
+  {
+    "authors": ["David Khourshid"],
+    "date_published": "2017-08-31T00:00:00",
+    "tags": ["Javascript", "React", "State Machine"],
+    "title": "Infinitely Better UIs with Finite Automata",
+    "url": "https://www.youtube.com/watch?v=VU1NKX6Qkxc"
+  },
+  {
+    "authors": ["James K Nelson"],
+    "date_published": "2017-08-30T00:00:00",
+    "tags": ["CSS In JS"],
+    "title": "How can I use CSS-in-JS securely?",
+    "url": "https://reactarmory.com/answers/how-can-i-use-css-in-js-securely"
+  },
+  {
+    "authors": ["Donavon West"],
+    "date_published": "2017-08-28T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Writing Scalable React Apps with the Component Folder Pattern",
+    "url": "https://medium.com/styled-components/component-folder-pattern-ee42df37ec68"
+  },
+  {
+    "authors": ["Stuart Waterman"],
+    "date_published": "2017-08-08T00:00:00",
+    "tags": ["Javascript", "React", "VR"],
+    "title": "Building in React VR: What we learned",
+    "url": "https://medium.com/mint-digital/building-in-react-vr-what-we-learned-779a76dde74c"
+  },
+  {
     "authors": ["Mark Erikson"],
     "date_published": "2017-07-25T00:00:00",
     "tags": ["Javascript", "Redux"],
     "title": "Practical Redux, Part 10: Managing Modals and Context Menus",
     "url": "https://blog.isquaredsoftware.com/2017/07/practical-redux-part-10-managing-modals/"
+  },
+  {
+    "authors": ["Maël Nison"],
+    "date_published": "2017-07-11T00:00:00",
+    "tags": ["Javascript", "Yarn"],
+    "title": "Let's Dev: A Package Manager",
+    "url": "https://yarnpkg.com/blog/2017/07/11/lets-dev-a-package-manager/"
   },
   {
     "authors": ["Mark Erikson"],
@@ -567,6 +875,13 @@
     "tags": ["Javascript", "React", "Styled Components"],
     "title": "Embracing the power of styled-components",
     "url": "https://building.lang.ai/embracing-the-power-of-styled-components-7b79a166c01b"
+  },
+  {
+    "authors": ["Tom Coleman"],
+    "date_published": "2017-06-01T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Understanding Higher Order Components",
+    "url": "https://medium.freecodecamp.org/understanding-higher-order-components-6ce359d761b"
   },
   {
     "authors": ["Mark Erikson"],
@@ -609,6 +924,20 @@
     "tags": ["Javascript", "React"],
     "title": "Declaratively Rendering Earth in 3D, Part 2: Controlling Cesium with React",
     "url": "https://blog.isquaredsoftware.com/2017/03/declarative-earth-part-2-cesium-react/"
+  },
+  {
+    "authors": ["Justice Mba"],
+    "date_published": "2017-03-03T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Functional setState is the future of React",
+    "url": "https://medium.freecodecamp.org/functional-setstate-is-the-future-of-react-374f30401b6b"
+  },
+  {
+    "authors": ["Nader Dabit"],
+    "date_published": "2017-02-20T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Redux 4 Ways",
+    "url": "https://medium.com/react-native-training/redux-4-ways-95a130da0cdc"
   },
   {
     "authors": ["Mark Erikson"],
@@ -749,6 +1078,13 @@
     "tags": ["Javascript", "React"],
     "title": "Should I keep something in React component state?",
     "url": "https://twitter.com/dan_abramov/status/749710501916139520"
+  },
+  {
+    "authors": ["Tal Kol"],
+    "date_published": "2016-06-19T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "Performance Limitations of React Native and How to Overcome Them",
+    "url": "https://medium.com/@talkol/performance-limitations-of-react-native-and-how-to-overcome-them-947630d7f440"
   },
   {
     "authors": ["Andrew Clark"],
