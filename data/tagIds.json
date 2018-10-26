@@ -8,6 +8,7 @@
   "cname": "CNAME",
   "css": "CSS",
   "css-in-js": "CSS In JS",
+  "d3": "D3",
   "dkim": "DKIM",
   "docker": "Docker",
   "electron": "Electron",
@@ -26,6 +27,7 @@
   "immutability": "Immutability",
   "javascript": "Javascript",
   "jest": "Jest",
+  "kotlin": "Kotlin",
   "mailgun": "MailGun",
   "markov-chains": "Markov Chains",
   "microservices": "Microservices",
@@ -44,6 +46,7 @@
   "python": "Python",
   "react": "React",
   "react-fire": "React Fire",
+  "react-hooks": "React Hooks",
   "react-native": "React Native",
   "react-router": "React Router",
   "react-suspense": "React Suspense",
@@ -65,5 +68,6 @@
   "ubuntu-16.04": "Ubuntu 16.04",
   "virtual-dom": "Virtual DOM",
   "vr": "VR",
+  "webpack": "Webpack",
   "yarn": "Yarn"
 }

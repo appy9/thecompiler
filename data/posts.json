@@ -1,10 +1,52 @@
 [
   {
-    "authors": ["Kent C Dodds"],
+    "authors": ["Paul Henschel"],
+    "date_published": "2018-10-26T00:00:00",
+    "tags": ["Javascript", "React", "React Hooks"],
+    "title": "Hooks in react-spring, a tutorial",
+    "url": "https://medium.com/@drcmda/hooks-in-react-spring-a-tutorial-c6c436ad7ee4"
+  },
+  {
+    "authors": ["React"],
+    "date_published": "2018-10-25T00:00:00",
+    "tags": ["Javascript", "React", "React Hooks"],
+    "title": "Introducing Hooks",
+    "url": "https://reactjs.org/docs/hooks-intro.html"
+  },
+  {
+    "authors": ["Michelle Gienow"],
     "date_published": "2018-10-24T00:00:00",
-    "tags": ["Javascript", "Testing"],
-    "title": "Demystifying JavaScript Testing",
-    "url": "https://css-tricks.com/demystifying-javascript-testing"
+    "tags": ["Javascript"],
+    "title": "Why Netflix Rolled Its Own Node.js Functions-as-a-Service Runtime",
+    "url": "https://thenewstack.io/why-netflix-rolled-its-own-node-js-functions-as-a-service-runtime/"
+  },
+  {
+    "authors": ["Paul Miller"],
+    "date_published": "2018-10-24T00:00:00",
+    "tags": ["CSS"],
+    "title": "Using dark mode in CSS with MacOS Mojave",
+    "url": "https://paulmillr.com/posts/using-dark-mode-in-css/"
+  },
+  {
+    "authors": ["Vignesh M"],
+    "date_published": "2018-10-24T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React.lazy, What and how to use in your app",
+    "url": "https://dev.to/vigzmv/reactlazy-what-and-how-to-use-in-your-app-p9a"
+  },
+  {
+    "authors": ["Tyler McGinnis"],
+    "date_published": "2018-10-24T00:00:00",
+    "tags": ["Javascript", "React", "Render Props"],
+    "title": "React Render Props",
+    "url": "https://reactjs.org/docs/hooks-intro.html"
+  },
+  {
+    "authors": ["Tyler McGinnis"],
+    "date_published": "2018-10-23T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "React Higher-Order Components",
+    "url": "https://tylermcginnis.com/react-higher-order-components/"
   },
   {
     "authors": ["Helen Zhukova"],
@@ -133,11 +175,39 @@
     "url": "https://softwareengineeringdaily.com/2018/10/22/react-and-graphql-at-the-nytimes"
   },
   {
+    "authors": ["Honest Engineering"],
+    "date_published": "2018-10-20T00:00:00",
+    "tags": [],
+    "title": "Hash Functions survival guide",
+    "url": "https://honest.engineering/posts/hash-functions-survival-guide"
+  },
+  {
+    "authors": ["Cameron Matheson"],
+    "date_published": "2018-10-19T00:00:00",
+    "tags": ["Javascript", "GraphQL"],
+    "title": "GraphQL IRL",
+    "url": "https://www.youtube.com/watch?v=SH5Xin9_eLU"
+  },
+  {
+    "authors": ["Laurie Voss"],
+    "date_published": "2018-10-19T00:00:00",
+    "tags": ["Javascript", "npm"],
+    "title": "npm and the Future of JavaScript",
+    "url": "https://www.youtube.com/watch?v=0PU-4GGLzGg"
+  },
+  {
     "authors": ["Shawn Swyx Wang"],
     "date_published": "2018-10-18T00:00:00",
     "tags": ["React", "React Suspense", "Netlify"],
     "title": "React Suspense with Netlify Functions",
     "url": "https://www.netlify.com/blog/2018/10/18/react-suspense-with-netlify-functions/"
+  },
+  {
+    "authors": ["Annyce Davis"],
+    "date_published": "2018-10-12T00:00:00",
+    "tags": ["Kotlin", "GraphQL"],
+    "title": "GraphQL Powered by Kotlin",
+    "url": "https://www.youtube.com/watch?v=1NmXeZgtkvg&feature=youtu.be&t=1"
   },
   {
     "authors": ["Ryan Florence"],
@@ -231,6 +301,13 @@
     "url": "https://blog.isquaredsoftware.com/presentations/2018-09-state-of-redux"
   },
   {
+    "authors": ["Sean Larkin"],
+    "date_published": "2018-08-31T00:00:00",
+    "tags": ["Javascript", "Webpack"],
+    "title": "Everything is a plugin!! Mastering webpack from the inside out",
+    "url": "https://www.youtube.com/watch?v=NHI_PhoykVU"
+  },
+  {
     "authors": ["Dan Abramov"],
     "date_published": "2018-08-31T00:00:00",
     "tags": ["Javascript", "React", "React Fire"],
@@ -308,6 +385,13 @@
     "url": "https://medium.com/styled-components/how-styled-components-works-618a69970421"
   },
   {
+    "authors": ["Prisma"],
+    "date_published": "2018-08-07T00:00:00",
+    "tags": ["Javascript", "GraphQL"],
+    "title": "Open Sourcing GraphQL Middleware - A Library to Simplify Your Resolvers",
+    "url": "https://www.prisma.io/blog/graphql-middleware-zie3iphithxy/"
+  },
+  {
     "authors": ["Honest Engineering"],
     "date_published": "2018-08-04T00:00:00",
     "tags": ["Javascript", "GraphQL"],
@@ -354,6 +438,13 @@
     "url": "https://medium.com/yld-engineering-blog/react-is-just-javascript-88600553269c"
   },
   {
+    "authors": ["Sasha Solomon"],
+    "date_published": "2018-07-02T00:00:00",
+    "tags": ["Javascript", "React", "GraphQL"],
+    "title": "Migrating Medium’s codebase without slowing down",
+    "url": "https://www.youtube.com/watch?v=GKxog_SETzs"
+  },
+  {
     "authors": ["Dennis Gaebel"],
     "date_published": "2018-06-27T00:00:00",
     "tags": ["CSS"],
@@ -387,6 +478,13 @@
     "tags": ["Javascript", "React"],
     "title": "Fullstack React's Guide to using Refs in React Components",
     "url": "https://www.fullstackreact.com/articles/using-refs-in-react/"
+  },
+  {
+    "authors": ["Martijn Walraven"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["Javascript", "GraphQL", "Apollo"],
+    "title": "Easy and performant GraphQL over REST",
+    "url": "https://blog.apollographql.com/easy-and-performant-graphql-over-rest-e02796993b2b"
   },
   {
     "authors": ["Gabriel Peal"],
@@ -431,11 +529,32 @@
     "url": "https://tylermcginnis.com/react-router-ambiguous-matches"
   },
   {
+    "authors": ["Clarence Ngoh"],
+    "date_published": "2018-06-13T00:00:00",
+    "tags": ["Javascript", "GraphQL", "Apollo"],
+    "title": "Full Stack Error Handling with GraphQL and Apollo",
+    "url": "https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210"
+  },
+  {
+    "authors": ["James Mortemore"],
+    "date_published": "2018-06-06T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "GraphQL validation using directives",
+    "url": "https://blog.apollographql.com/graphql-validation-using-directives-4908fd5c1055"
+  },
+  {
     "authors": ["Francisco Varisco"],
     "date_published": "2018-06-06T00:00:00",
     "tags": ["Javascript", "React", "GraphQL", "Apollo"],
     "title": "Real Time GraphQL Mutations — Using Apollo Client, React and Optimistic UI",
     "url": "https://medium.com/@franciscovarisco/real-time-graphql-mutations-using-apollo-client-react-and-optimistic-ui-10e35ec3553e"
+  },
+  {
+    "authors": ["Sashko Stubailo"],
+    "date_published": "2018-06-05T00:00:00",
+    "tags": ["Javascript", "GraphQL"],
+    "title": "Using nullability in GraphQL",
+    "url": "https://blog.apollographql.com/using-nullability-in-graphql-2254f84c4ed7"
   },
   {
     "authors": ["Christopher Diggins"],
@@ -498,6 +617,27 @@
     "tags": ["Javascript", "Ember", "React"],
     "title": "From React to Ember: A Modern Comparison",
     "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
+  },
+  {
+    "authors": ["Mike Fix"],
+    "date_published": "2018-05-24T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "Experimental GraphQL - How Can We Stretch GraphQL to Its Limits, and beyond?",
+    "url": "https://www.prisma.io/blog/experimental-graphql-106b07424435/"
+  },
+  {
+    "authors": ["Sara Vieira", "Kasia Jastrzebska"],
+    "date_published": "2018-05-21T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Seven Deadly Sins: React Edition",
+    "url": "https://www.youtube.com/watch?v=gAHQ02xU2Rw"
+  },
+  {
+    "authors": ["Nicolas Barray"],
+    "date_published": "2018-05-21T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "Redux over the wire",
+    "url": "https://www.youtube.com/watch?v=pnb5DV3q8n0"
   },
   {
     "authors": ["Liang Guo"],
@@ -737,6 +877,13 @@
     "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7"
   },
   {
+    "authors": ["Prisma"],
+    "date_published": "2017-11-14T00:00:00",
+    "tags": ["Javascript", "GraphQL"],
+    "title": "GraphQL Server Basics: GraphQL Schemas, TypeDefs & Resolvers Explained",
+    "url": "https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e/"
+  },
+  {
     "authors": ["David Khourshid"],
     "date_published": "2017-11-13T00:00:00",
     "tags": ["Javascript", "React", "State Machine"],
@@ -786,6 +933,13 @@
     "url": "http://arkwright.github.io/scaling-react-server-side-rendering.html"
   },
   {
+    "authors": ["Nitin Tulswani"],
+    "date_published": "2017-09-24T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Making a custom React renderer",
+    "url": "https://github.com/nitin42/Making-a-custom-React-renderer"
+  },
+  {
     "authors": ["Michael Jackson"],
     "date_published": "2017-09-18T00:00:00",
     "tags": ["Javascript", "React", "Render Props"],
@@ -812,6 +966,13 @@
     "tags": ["Javascript", "React", "State Machine"],
     "title": "Infinitely Better UIs with Finite Automata",
     "url": "https://www.youtube.com/watch?v=VU1NKX6Qkxc"
+  },
+  {
+    "authors": ["Shirley Wu"],
+    "date_published": "2017-08-30T00:00:00",
+    "tags": ["Javascript", "React", "D3"],
+    "title": "D3 & React",
+    "url": "https://www.youtube.com/watch?v=ladXdJ3KKd4"
   },
   {
     "authors": ["James K Nelson"],
@@ -896,6 +1057,13 @@
     "tags": ["Javascript", "Redux"],
     "title": "Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent",
     "url": "https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/"
+  },
+  {
+    "authors": ["Prisma"],
+    "date_published": "2017-05-01T00:00:00",
+    "tags": ["GraphQL"],
+    "title": "GraphQL SDL — Schema Definition Language",
+    "url": "https://www.prisma.io/blog/graphql-sdl-schema-definition-language-6755bcb9ce51/"
   },
   {
     "authors": ["Naveen Kumar"],
