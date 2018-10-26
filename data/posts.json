@@ -56,6 +56,24 @@
     "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons"
   },
   {
+    "authors": ["Jesse Heaslip"],
+    "date_published": "2018-07-30T00:00:00",
+    "tags": [
+      "OAuth",
+      "React",
+      "Github OAuth",
+      "Github",
+      "Facebook OAuth",
+      "Facebook",
+      "Google OAuth",
+      "Google",
+      "Twitter OAuth",
+      "Twitter"
+    ],
+    "title": "React Authentication with Twitter, Google, Facebook and Github",
+    "url": "https://codeburst.io/react-authentication-with-twitter-google-facebook-and-github-862d59583105"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2018-07-10T00:00:00",
     "tags": ["Javascript", "React"],
@@ -194,6 +212,13 @@
     "url": "https://tylermcginnis.com/react-router-animated-transitions"
   },
   {
+    "authors": ["Vitali Zaidman"],
+    "date_published": "2018-02-09T00:00:00",
+    "tags": ["Javascript", "Testing", "2018"],
+    "title": "An Overview of JavaScript Testing in 2018",
+    "url": "https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3"
+  },
+  {
     "authors": ["Max Stoiber"],
     "date_published": "2018-02-07T00:00:00",
     "tags": ["Javascript", "Serverside Rendering"],
@@ -327,6 +352,13 @@
     "url": "https://blog.isquaredsoftware.com/2017/07/react-redux-backbone-integration/"
   },
   {
+    "authors": ["Shanglun Wang"],
+    "date_published": "2017-07-03T00:00:00",
+    "tags": ["Python", "NLP", "Natural Language Processing"],
+    "title": "How to Build an Email Sentiment Analysis Bot: An NLP Tutorial",
+    "url": "https://www.toptal.com/java/email-sentiment-analysis-bot"
+  },
+  {
     "authors": ["Mark Erikson"],
     "date_published": "2017-05-10T00:00:00",
     "tags": ["Javascript", "Redux"],
@@ -339,6 +371,20 @@
     "tags": ["Javascript", "Redux"],
     "title": "Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent",
     "url": "https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/"
+  },
+  {
+    "authors": ["Naveen Kumar"],
+    "date_published": "2017-04-22T00:00:00",
+    "tags": ["C#", "Functional", "Functional Programming"],
+    "title": "Introduction to functional programming with C#",
+    "url": "https://medium.com/@naveenrtr/introduction-to-functional-programming-with-c-b167f15221e1"
+  },
+  {
+    "authors": ["Ben Shaver"],
+    "date_published": "2017-04-22T00:00:00",
+    "tags": ["Python", "NLP", "Natural Language Processing", "Markov Chains"],
+    "title": "Simulating Text With Markov Chains in Python",
+    "url": "https://towardsdatascience.com/simulating-text-with-markov-chains-in-python-1a27e6d13fc6"
   },
   {
     "authors": ["Mark Erikson"],
@@ -453,6 +499,13 @@
     "url": "http://blog.traintracks.io/redux-immutability-and-higher-order-components/"
   },
   {
+    "authors": ["Hui Dai"],
+    "date_published": "2016-07-12T00:00:00",
+    "tags": ["NameCheap", "MX", "MailGun", "SPF", "DKIM", "CNAME", "MX"],
+    "title": "Setup MailGun on NameCheap: SPF, DKIM, CNAME and MX",
+    "url": "https://medium.com/@ustcboulder/setup-mailgun-on-namecheap-spf-dkim-cname-and-mx-684b5c1fb492"
+  },
+  {
     "authors": ["Dave Ceddia"],
     "date_published": "2016-07-06T00:00:00",
     "tags": ["Javascript", "React"],
@@ -465,6 +518,13 @@
     "tags": ["Javascript", "React"],
     "title": "Recomposing your React application at react-europe 2016",
     "url": "https://www.youtube.com/watch?v=zD_judE-bXk"
+  },
+  {
+    "authors": ["Justin Ellingwood"],
+    "date_published": "2016-05-19T00:00:00",
+    "tags": ["Ubuntu", "Ubuntu 16.04", "nginx", "server blocks"],
+    "title": "How To Set Up Nginx Server Blocks (Virtual Hosts) on Ubuntu 16.04",
+    "url": "https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04"
   },
   {
     "authors": ["Tyler Shaddix"],
