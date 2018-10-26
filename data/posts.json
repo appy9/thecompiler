@@ -28,6 +28,27 @@
     "url": "https://tylermcginnis.com/beginners-guide-to-javascript-prototype"
   },
   {
+    "authors": ["Jordan Enev"],
+    "date_published": "2018-10-01T00:00:00",
+    "tags": ["Javascript", "React", "Redux", "SPA"],
+    "title": "Long-term React & Redux SPA — Lessons learned",
+    "url": "https://notes.devlabs.bg/long-term-react-redux-spa-lessons-learned-14daca3a26ba"
+  },
+  {
+    "authors": ["John Bacon", "Brian Liang", "Peter Turner"],
+    "date_published": "2018-09-17T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "Why & How Words With Friends Is Adopting React Native",
+    "url": "https://medium.com/zynga-engineering/why-how-words-with-friends-is-adopting-react-native-b24a405f421c"
+  },
+  {
+    "authors": ["Jen Luker"],
+    "date_published": "2018-09-10T00:00:00",
+    "tags": ["Javascript", "React", "Accessibility"],
+    "title": "Accessibility: Beyond the Basics",
+    "url": "https://www.youtube.com/watch?v=8E9AEZjglqI"
+  },
+  {
     "authors": ["Charles Stover"],
     "date_published": "2018-09-10T00:00:00",
     "tags": ["Javascript", "React", "Performance"],
@@ -35,11 +56,46 @@
     "url": "https://medium.com/@Charles_Stover/cache-your-react-event-listeners-to-improve-performance-14f635a62e15"
   },
   {
+    "authors": ["Arwa Lokhandwala"],
+    "date_published": "2018-09-04T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Power of “keys” in React.js",
+    "url": "https://blog.usejournal.com/power-of-keys-in-react-js-%EF%B8%8F-55bb5bf80821"
+  },
+  {
+    "authors": ["Katie Garcia"],
+    "date_published": "2018-09-04T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Scoping A/B Test Code in React: A Better Way",
+    "url": "https://medium.com/homeaway-tech-blog/a-b-testing-and-the-cloak-of-invisibility-a-better-way-to-scope-variant-code-in-your-react-app-902a68a0c2c3"
+  },
+  {
     "authors": ["Mark Erikson"],
     "date_published": "2018-09-01T00:00:00",
     "tags": ["Javascript", "Redux"],
     "title": "The State of Redux",
     "url": "https://blog.isquaredsoftware.com/presentations/2018-09-state-of-redux"
+  },
+  {
+    "authors": ["Dan Abramov"],
+    "date_published": "2018-08-31T00:00:00",
+    "tags": ["Javascript", "React", "React Fire"],
+    "title": "React Fire: Modernizing React DOM",
+    "url": "https://github.com/facebook/react/issues/13525"
+  },
+  {
+    "authors": ["Danijel Vincijanovic"],
+    "date_published": "2018-08-30T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Level up your React architecture with MVVM",
+    "url": "https://medium.cobeisfresh.com/level-up-your-react-architecture-with-mvvm-a471979e3f21"
+  },
+  {
+    "authors": ["Shawn Swyx Wang"],
+    "date_published": "2018-08-29T00:00:00",
+    "tags": ["Javascript", "React", "Performance"],
+    "title": "Using the React DevTools Profiler to Diagnose React App Performance Issues",
+    "url": "https://www.netlify.com/blog/2018/08/29/using-the-react-devtools-profiler-to-diagnose-react-app-performance-issues/"
   },
   {
     "authors": ["Eugene Gluhotorenko"],
@@ -56,6 +112,13 @@
     "url": "https://honest.engineering/posts/why-use-graphql-good-and-bad-reasons"
   },
   {
+    "authors": ["Dave Ceddia"],
+    "date_published": "2018-07-17T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "Redux vs. The React Context API",
+    "url": "https://daveceddia.com/context-api-vs-redux/"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2018-07-10T00:00:00",
     "tags": ["Javascript", "React"],
@@ -70,6 +133,13 @@
     "url": "https://medium.com/yld-engineering-blog/react-is-just-javascript-88600553269c"
   },
   {
+    "authors": ["Kristofer Selbekk"],
+    "date_published": "2018-06-25T00:00:00",
+    "tags": ["Javascript", "React", "State Machine"],
+    "title": "Handling data fetching with state machines",
+    "url": "https://blog.usejournal.com/handling-data-fetching-with-state-machines-4e25b6366d9"
+  },
+  {
     "authors": ["Tom Gallacher"],
     "date_published": "2018-06-25T00:00:00",
     "tags": ["Docker"],
@@ -77,11 +147,74 @@
     "url": "https://medium.com/yld-engineering-blog/when-should-i-use-docker-77ae2736a487"
   },
   {
+    "authors": ["Charlie Cheever"],
+    "date_published": "2018-06-22T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "Should we use React Native?",
+    "url": "https://blog.expo.io/should-we-use-react-native-1465d8b607ac"
+  },
+  {
+    "authors": ["Yomi Eluwande"],
+    "date_published": "2018-06-22T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Fullstack React's Guide to using Refs in React Components",
+    "url": "https://www.fullstackreact.com/articles/using-refs-in-react/"
+  },
+  {
+    "authors": ["Gabriel Peal"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "What’s Next for Mobile at Airbnb",
+    "url": "https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab"
+  },
+  {
+    "authors": ["Gabriel Peal"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "Sunsetting React Native",
+    "url": "https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a"
+  },
+  {
+    "authors": ["Gabriel Peal"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "Building a Cross-Platform Mobile Team",
+    "url": "https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88"
+  },
+  {
+    "authors": ["Gabriel Peal"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "React Native at Airbnb: The Technology",
+    "url": "https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838"
+  },
+  {
+    "authors": ["Gabriel Peal"],
+    "date_published": "2018-06-19T00:00:00",
+    "tags": ["Javascript", "React", "React Native"],
+    "title": "React Native at Airbnb",
+    "url": "https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2018-06-19T00:00:00",
     "tags": ["Javascript", "React", "React Router"],
     "title": "Ambiguous Matches with React Router v4",
     "url": "https://tylermcginnis.com/react-router-ambiguous-matches"
+  },
+  {
+    "authors": ["Francisco Varisco"],
+    "date_published": "2018-06-06T00:00:00",
+    "tags": ["Javascript", "React", "GraphQL", "Apollo"],
+    "title": "Real Time GraphQL Mutations — Using Apollo Client, React and Optimistic UI",
+    "url": "https://medium.com/@franciscovarisco/real-time-graphql-mutations-using-apollo-client-react-and-optimistic-ui-10e35ec3553e"
+  },
+  {
+    "authors": ["Christopher Diggins"],
+    "date_published": "2018-06-05T00:00:00",
+    "tags": ["Javascript", "React", "Typescript"],
+    "title": "Best practices for using Typescript with React",
+    "url": "https://medium.freecodecamp.org/effective-use-of-typescript-with-react-3a1389b6072a"
   },
   {
     "authors": ["Andrew Clark"],
@@ -132,6 +265,13 @@
     "url": "https://www.youtube.com/watch?v=7yxr4iBrZsw"
   },
   {
+    "authors": ["Kent C. Dodds"],
+    "date_published": "2018-05-07T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Mixing Component Patterns",
+    "url": "https://blog.kentcdodds.com/mixing-component-patterns-4328f1e26bb5"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2018-04-25T00:00:00",
     "tags": ["Javascript", "React", "React Router"],
@@ -180,6 +320,20 @@
     "url": "https://tylermcginnis.com/react-router-server-rendering"
   },
   {
+    "authors": ["Ryan Florence"],
+    "date_published": "2018-03-05T00:00:00",
+    "tags": ["Javascript", "React", "Render Props"],
+    "title": "Render Props, React.createContext, Event Handlers, Lifecycles … But How?",
+    "url": "https://medium.com/workshop-me/render-props-react-createcontext-but-how-9c8e457a90e3"
+  },
+  {
+    "authors": ["Didier Franc"],
+    "date_published": "2018-02-25T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "Replacing Redux with the new React context API",
+    "url": "https://medium.freecodecamp.org/replacing-redux-with-the-new-react-context-api-8f5d01a00e8c"
+  },
+  {
     "authors": ["Max Stoiber"],
     "date_published": "2018-02-21T00:00:00",
     "tags": ["Javascript", "GraphQL"],
@@ -208,6 +362,13 @@
     "url": "https://tylermcginnis.com/react-router-pass-props-to-components"
   },
   {
+    "authors": ["Donavon West"],
+    "date_published": "2018-02-01T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Conditional Rendering in React using Ternaries and Logical AND",
+    "url": "https://medium.freecodecamp.org/conditional-rendering-in-react-using-ternaries-and-logical-and-7807f53b6935"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2018-02-01T00:00:00",
     "tags": ["Javascript", "React", "React Router"],
@@ -227,6 +388,13 @@
     "tags": ["Javascript", "React", "React Router"],
     "title": "Programmatically navigate with React Router",
     "url": "https://tylermcginnis.com/react-router-programmatically-navigate"
+  },
+  {
+    "authors": ["Dan Abramov"],
+    "date_published": "2018-01-24T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Why is `setState` asynchronous?",
+    "url": "https://github.com/facebook/react/issues/11527#issuecomment-360199710"
   },
   {
     "authors": ["Tyler McGinnis"],
@@ -292,6 +460,13 @@
     "url": "https://www.prisma.io/blog/how-do-graphql-remote-schemas-work-7118237c89d7"
   },
   {
+    "authors": ["David Khourshid"],
+    "date_published": "2017-11-13T00:00:00",
+    "tags": ["Javascript", "React", "State Machine"],
+    "title": "Robust React User Interfaces with Finite State Machines",
+    "url": "https://css-tricks.com/robust-react-user-interfaces-with-finite-state-machines/"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2017-11-13T00:00:00",
     "tags": ["Javascript", "React", "React Router"],
@@ -299,11 +474,39 @@
     "url": "https://tylermcginnis.com/react-router-protected-routes-authentication"
   },
   {
+    "authors": ["Danijel Vincijanovic"],
+    "date_published": "2017-11-08T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "How Redux Can Make You a Better Developer",
+    "url": "https://medium.cobeisfresh.com/how-redux-can-make-you-a-better-developer-30a094d5e3ec"
+  },
+  {
     "authors": ["Tyler McGinnis"],
     "date_published": "2017-10-12T00:00:00",
     "tags": ["Javascript"],
     "title": "Arrow Functions in JavaScript",
     "url": "https://tylermcginnis.com/arrow-functions"
+  },
+  {
+    "authors": ["Ryan Crockett"],
+    "date_published": "2017-10-04T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "How to fix your React app when it secretly hates you",
+    "url": "https://medium.com/building-crowdriff/how-to-fix-your-react-app-when-it-secretly-hates-you-8532ffbcc7f9"
+  },
+  {
+    "authors": ["Robert Arkwright"],
+    "date_published": "2017-10-02T00:00:00",
+    "tags": ["Javascript", "React", "Serverside Rendering"],
+    "title": "Scaling React Server-Side Rendering",
+    "url": "http://arkwright.github.io/scaling-react-server-side-rendering.html"
+  },
+  {
+    "authors": ["Michael Jackson"],
+    "date_published": "2017-09-18T00:00:00",
+    "tags": ["Javascript", "React", "Render Props"],
+    "title": "Use a Render Prop!",
+    "url": "https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce"
   },
   {
     "authors": ["Mark Erikson"],
@@ -325,6 +528,13 @@
     "tags": ["Javascript", "React", "Redux", "Backbone"],
     "title": "Integrating React and Redux Into an Existing Backbone App",
     "url": "https://blog.isquaredsoftware.com/2017/07/react-redux-backbone-integration/"
+  },
+  {
+    "authors": ["Fernando Agüero"],
+    "date_published": "2017-06-07T00:00:00",
+    "tags": ["Javascript", "React", "Styled Components"],
+    "title": "Embracing the power of styled-components",
+    "url": "https://building.lang.ai/embracing-the-power-of-styled-components-7b79a166c01b"
   },
   {
     "authors": ["Mark Erikson"],
@@ -390,6 +600,13 @@
     "url": "https://blog.isquaredsoftware.com/2016/12/practical-redux-part-5-loading-and-displaying-data/"
   },
   {
+    "authors": ["Raja Rao DV"],
+    "date_published": "2016-12-11T00:00:00",
+    "tags": ["Javascript", "Virtual DOM"],
+    "title": "The Inner Workings Of Virtual DOM",
+    "url": "https://medium.com/@rajaraodv/the-inner-workings-of-virtual-dom-666ee7ad47cf"
+  },
+  {
     "authors": ["Max Stoiber"],
     "date_published": "2016-11-30T00:00:00",
     "tags": ["Javascript", "Styled Components"],
@@ -425,11 +642,25 @@
     "url": "https://blog.isquaredsoftware.com/2016/10/practical-redux-part-2-redux-orm-concepts-and-techniques/"
   },
   {
+    "authors": ["Moritz Kröger"],
+    "date_published": "2016-10-24T00:00:00",
+    "tags": ["Javascript", "Redux"],
+    "title": "Redux without React — State Management in Vanilla JavaScript",
+    "url": "https://www.sitepoint.com/redux-without-react-state-management-vanilla-javascript"
+  },
+  {
     "authors": ["Mark Erikson"],
     "date_published": "2016-10-09T00:00:00",
     "tags": ["Javascript", "Redux"],
     "title": "Idiomatic Redux: Why use action creators?",
     "url": "https://blog.isquaredsoftware.com/2016/10/idiomatic-redux-why-use-action-creators/"
+  },
+  {
+    "authors": ["Dan Abramov"],
+    "date_published": "2016-09-19T00:00:00",
+    "tags": ["Javascript", "React", "Redux"],
+    "title": "You Might Not Need Redux",
+    "url": "https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367"
   },
   {
     "authors": ["James Baxley III"],
@@ -460,11 +691,25 @@
     "url": "https://daveceddia.com/avoid-bind-when-passing-props/"
   },
   {
+    "authors": ["Dan Abramov"],
+    "date_published": "2016-07-03T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Should I keep something in React component state?",
+    "url": "https://twitter.com/dan_abramov/status/749710501916139520"
+  },
+  {
     "authors": ["Andrew Clark"],
     "date_published": "2016-06-06T00:00:00",
     "tags": ["Javascript", "React"],
     "title": "Recomposing your React application at react-europe 2016",
     "url": "https://www.youtube.com/watch?v=zD_judE-bXk"
+  },
+  {
+    "authors": ["Gary Cheetham"],
+    "date_published": "2016-05-20T00:00:00",
+    "tags": ["Javascript", "React"],
+    "title": "Killing Switch Statements in React with the Strategy Pattern",
+    "url": "https://glcheetham.name/2016/05/20/killing-switch-statements-in-react-with-the-strategy-pattern"
   },
   {
     "authors": ["Tyler Shaddix"],

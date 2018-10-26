@@ -1,4 +1,6 @@
 {
+  "accessibility": "Accessibility",
+  "apollo": "Apollo",
   "babel": "Babel",
   "backbone": "Backbone",
   "css-in-js": "CSS in JS",
@@ -12,10 +14,17 @@
   "performance": "Performance",
   "prisma": "Prisma",
   "react": "React",
+  "react-fire": "React Fire",
+  "react-native": "React Native",
   "react-router": "React Router",
   "react-suspense": "React Suspense",
   "redux": "Redux",
+  "render-props": "Render Props",
   "serverside-rendering": "Serverside Rendering",
+  "spa": "SPA",
+  "state-machine": "State Machine",
   "styled-components": "Styled Components",
-  "testing": "Testing"
+  "testing": "Testing",
+  "typescript": "Typescript",
+  "virtual-dom": "Virtual DOM"
 }
