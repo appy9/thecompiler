@@ -1,5 +1,7 @@
 {
   "2018": "2018",
+  "accessibility": "Accessibility",
+  "apollo": "Apollo",
   "babel": "Babel",
   "backbone": "Backbone",
   "c#": "C#",
@@ -33,16 +35,23 @@
   "prisma": "Prisma",
   "python": "Python",
   "react": "React",
+  "react-fire": "React Fire",
+  "react-native": "React Native",
   "react-router": "React Router",
   "react-suspense": "React Suspense",
   "redux": "Redux",
+  "render-props": "Render Props",
   "server-blocks": "server blocks",
   "serverside-rendering": "Serverside Rendering",
+  "spa": "SPA",
   "spf": "SPF",
+  "state-machine": "State Machine",
   "styled-components": "Styled Components",
   "testing": "Testing",
   "twitter": "Twitter",
   "twitter-oauth": "Twitter OAuth",
+  "typescript": "Typescript",
   "ubuntu": "Ubuntu",
-  "ubuntu-16.04": "Ubuntu 16.04"
+  "ubuntu-16.04": "Ubuntu 16.04",
+  "virtual-dom": "Virtual DOM"
 }
