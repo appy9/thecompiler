@@ -1344,5 +1344,12 @@
     "tags": ["Serverside Rendering"],
     "title": "Isomorphic JavaScript: The Future of Web Apps",
     "url": "https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc"
+  },
+  {
+    "authors": ["Benjamin Coe"],
+    "date_published": "2018-09-26T00:00:00",
+    "tags": ["Javascript", "Node", "Npm"],
+    "title": "Rethinking JavaScript Test Coverage",
+    "url": "https://blog.npmjs.org/post/178487845610/rethinking-javascript-test-coverage"
   }
 ]
